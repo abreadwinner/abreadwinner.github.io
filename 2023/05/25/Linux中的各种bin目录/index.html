@@ -5,8 +5,8 @@
   <meta name="Volantis" content="5.7.10">
   <meta charset="utf-8">
   <!-- SEO相关 -->
-  <meta name="robots" content="noindex,follow">
-  <link rel="canonical" href="http://yoursite.com/tags/nginx/"/>
+  
+  <link rel="canonical" href="http://yoursite.com/2023/05/25/linux中的各种bin目录/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -32,18 +32,21 @@
 
   <!-- feed -->
   <!-- 页面元数据 -->
-  <title>标签：nginx - 怒涛卷霜雪  天堑无涯</title>
-  <meta name="keywords" content="null">
+  <title>Linux中的各种bin目录 - 怒涛卷霜雪  天堑无涯</title>
+  <meta name="keywords" content="bin目录,null">
   <meta desc name="description" content="test description - 吴涛 - 怒涛卷霜雪  天堑无涯">
   
-<meta property="og:type" content="website">
-<meta property="og:title" content="怒涛卷霜雪  天堑无涯">
-<meta property="og:url" content="http://yoursite.com/tags/nginx/index.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Linux中的各种bin目录">
+<meta property="og:url" content="http://yoursite.com/2023/05/25/Linux%E4%B8%AD%E7%9A%84%E5%90%84%E7%A7%8Dbin%E7%9B%AE%E5%BD%95/index.html">
 <meta property="og:site_name" content="怒涛卷霜雪  天堑无涯">
-<meta property="og:description" content="test description">
+<meta property="og:description" content="##usr实际上是Unix System Resource &#x2F;usr&#x2F;bin系统预装的一些可执行程序，随系统升级会改变 &#x2F;usr&#x2F;local&#x2F;bin用户安装的可执行程序，不受系统升级影响，用户编译安装软件时，一般放到&#x2F;usr&#x2F;local目录下 如果两个目录下有相同的可执行程序，谁优先执行会受到PATH环境变量的影响，举个栗子：echo $PATH查看当前 PATH 环境变量&#x2F;u">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+<meta property="article:published_time" content="2023-05-24T16:00:00.000Z">
+<meta property="article:modified_time" content="2023-05-31T11:07:54.305Z">
 <meta property="article:author" content="吴涛">
+<meta property="article:tag" content="bin目录">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
   <style>
@@ -2318,7 +2321,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
       <!-- see: /layout/_partial/scripts/_ctrl/coverCtrl.ejs -->
-      <div id="none" class='cover-wrapper  search' style="display: none;">
+      <div id="none" class='cover-wrapper post search' style="display: none;">
         
   <div class='cover-bg lazyload placeholder' data-bg="https://tt-1316429231.cos.ap-nanjing.myqcloud.com/imgs/222.png"></div>
 
@@ -2395,25 +2398,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <div id="safearea">
         <div class="body-wrapper">
           
-
 <div id="l_main" class=''>
-  
-    
-      
-  <section class="post-list">
-    
-      
-        
-          
-        
-      
-    
-    
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2023/05/05/nginx绑定子域名/">
+  <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow floatable blur article-type-post" id="post" itemscope itemprop="blogPost">
+  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2023/05/25/Linux中的各种bin目录/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="怒涛卷霜雪  天堑无涯">
   </span>
@@ -2422,70 +2409,222 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <meta itemprop="description" content="test description">
   </span>
   
-  
+
+
   
     <span hidden>
       <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
     </span>
   
-  
+  <div class="article-meta" id="top">
     
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2023/05/05/nginx%E7%BB%91%E5%AE%9A%E5%AD%90%E5%9F%9F%E5%90%8D/"  itemprop="url">
-        nginx绑定子域名
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
     
-      
-        检查 nginx 配置文件路径（重要）注意：这一步非常关键，如果修改了错误的 nginx 配置文件，将导致所有修改均无效，甚至会让您在探索了数个小时后仍无法得知修改无效的原因是什么。   使用命令
-1$ nginx -V
-
-来查看 nginx 的一些配置信息，如下（您的和博主的显示内容可能不同，不影响）：
-12345nginx version: nginx/1.12.2built by gc...
-      
+    
+      <h1 class="title" itemprop="name headline">
+        Linux中的各种bin目录
+      </h1>
+      <div class='new-meta-box'>
+        
+          
+            
+  <div class='new-meta-item category'>
+    <i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>
+    <a class="category-link" href="/categories/Linux/">Linux</a>
+    
+      <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+        <a href="/categories/Linux/" itemprop="url"><span itemprop="name">Linux</span></a>
+      </span>
     
   </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2023-05-05T00:00:00+08:00">2023-05-05</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E8%AE%BA%E6%96%87/">论文</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E8%AE%BA%E6%96%87/" itemprop="url"><span itemprop="name">论文</span></a>
-            </span>
+
+
           
         
+          
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2023-05-25T00:00:00+08:00">
+  <a class='notlink'>
+    <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：2023年5月25日</p>
+  </a>
+</div>
+
+          
+        
+        <!-- Custom Files topMeta begin-->
+        
+        <!-- Custom Files topMeta end-->
       </div>
+    
+  </div>
+
+
+  <div id="layoutHelper-page-plugins"></div>
+  <div id="post-body" itemprop="articleBody">
+    <p>##<code>usr</code>实际上是<code>Unix System Resource</code></p>
+<p><strong><code>/usr/bin</code>系统预装的一些可执行程序，随系统升级会改变</strong></p>
+<p><strong><code>/usr/local/bin</code>用户安装的可执行程序，不受系统升级影响，用户编译安装软件时，一般放到&#x2F;usr&#x2F;local目录下</strong></p>
+<p>如果两个目录下有相同的可执行程序，谁优先执行会受到<code>PATH</code>环境变量的影响，举个栗子：<br><code>echo $PATH</code>查看当前 PATH 环境变量<br><code>/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/root/.local/bin:/root/bin:/usr/local/src/nodejs/bin:/usr/local/git/bin:/usr/bin/git/bin</code><br>这里<code>/usr/local/git/bin</code>优先于<code> /usr/bin/git/bin</code></p>
+<p><code>/bin </code>存放所有用户皆可用的系统程序，系统启动或者系统修复时可用（在没有挂载 &#x2F;usr 目录时就可以使用）</p>
+<p><code>/sbin</code> 存放超级用户才能使用的系统程序</p>
+<p><code>/usr/bin </code>存放所有用户都可用的应用程序</p>
+<p><code>/usr/sbin</code> 存放超级用户才能使用的应用程序</p>
+<p><code>/usr/local/bin</code> 存放所有用户都可用的与本地机器无关的程序</p>
+<p><code>/usr/local/sbin </code>存放超级用户才能使用的与本地机器无关的程序</p>
+<p><strong>Linux中的某些重要的目录：</strong></p>
+<p>•主目录：<code>/root、/home/username</code></p>
+<p>•用户可执行文件：<code>/bin、/usr/bin、/usr/local/bin</code></p>
+<p>•系统可执行文件：<code>/sbin、/usr/sbin、/usr/local/sbin</code></p>
+<p>•其他挂载点：<code>/media、/mnt</code></p>
+<p>•配置：<code>/etc</code></p>
+<p>•临时文件：<code>/tmp</code></p>
+<p>•内核和Bootloader：<code>/boot</code></p>
+<p>•服务器数据：<code>/var、/srv</code></p>
+<p>•系统信息：<code>/proc、/sys</code></p>
+<p>•共享库：<code>/lib、/usr/lib、/usr/local/lib</code></p>
+
+  </div>
+  
+  
+    
+    <div class='footer'>
+       <!-- 参考资料、相关资料等 -->
       
-        <div>
-          <a class='readmore' href='/2023/05/05/nginx%E7%BB%91%E5%AE%9A%E5%AD%90%E5%9F%9F%E5%90%8D/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
+       <!-- 相关文章 -->
+      
+      <!-- 版权声明组件 -->
+      
+      <!-- 打赏组件 -->
       
     </div>
   
+  
+    
 
+
+  <div class='article-meta' id="bottom">
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2023-05-31T19:07:54+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：2023年5月31日</p>
+  </a>
 </div>
 
-          </div>
         
       
-    
-  </section>
+        
+          
   
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/bin%E7%9B%AE%E5%BD%95/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>bin目录</p></a></div>
+  <span hidden itemprop="keywords">bin目录</span>
+
+
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
     
+      
+        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2023/05/25/Linux%E4%B8%AD%E7%9A%84%E5%90%84%E7%A7%8Dbin%E7%9B%AE%E5%BD%95/&title=Linux中的各种bin目录 - 怒涛卷霜雪  天堑无涯&summary="
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qq.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qq.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://yoursite.com/2023/05/25/Linux%E4%B8%AD%E7%9A%84%E5%90%84%E7%A7%8Dbin%E7%9B%AE%E5%BD%95/&title=Linux中的各种bin目录 - 怒涛卷霜雪  天堑无涯&summary="
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qzone.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qzone.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2023/05/25/Linux%E4%B8%AD%E7%9A%84%E5%90%84%E7%A7%8Dbin%E7%9B%AE%E5%BD%95/&title=Linux中的各种bin目录 - 怒涛卷霜雪  天堑无涯&summary="
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/weibo.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/weibo.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+
+
+        
+      
+    </div>
+    <!-- Custom Files bottomMeta begin -->
+    
+    <!-- Custom Files bottomMeta end -->
+  </div>
+
+
+  
+  
+
+  
+    <div class="prev-next">
+      
+      
+        <a class='next' href='/2023/05/23/linux%E5%AE%89%E8%A3%85redis/'>
+          <p class='title'>CentOs7安装Redis<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>前提条件：Linux装有gcc编译器
+###1. 官网下载redis
+1wget http://download.redis.io/releases/redis-5.0.14.tar.gz
+
+2...</p>
+        </a>
+      
+    </div>
+  
+  <!-- Custom Files postEnd begin-->
+  
+  <!-- Custom Files postEnd end-->
+</article>
+
+
   
 
 
+  <article class="post white-box shadow floatable blur" id="comments">
+    <span hidden>
+      <meta itemprop="discussionUrl" content="/2023/05/25/Linux%E4%B8%AD%E7%9A%84%E5%90%84%E7%A7%8Dbin%E7%9B%AE%E5%BD%95/index.html#comments">
+    </span>
+    <p ct><i class='fa-solid fa-comments'></i> 评论</p>
     
-  
+
+    <div id="layoutHelper-comments"></div>
+
+  </article>
+
+
+
+
+
+
 </div>
 <aside id='l_side' itemscope itemtype="http://schema.org/WPSideBar">
   
@@ -2494,176 +2633,42 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
       
-<section class="widget blogger desktop mobile pjax">
-  <div class='content'>
-    
-      
-        <a class='avatar flat-box rectangle' href='/about/'>
-          <img no-lazy src='https://tt-1316429231.cos.ap-nanjing.myqcloud.com/imgs/222.png'/>
-        </a>
-      
-    
-    
-      <div class='text'>
-        
-        
-        
-          <p><span id="jinrishici-sentence">怒涛卷霜雪  天堑无涯</span></p>
-          <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
-        
-      </div>
-    
-    
-      <div class="social-wrapper">
-        
-          
-            <a href="/atom.xml"
-              class="social fa-solid fa-rss flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="mailto:wutao222666@163.com"
-              class="social fa-solid fa-envelope flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="https://github.com/breadwinnert/"
-              class="social fab fa-github flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-      </div>
-    
-  </div>
-</section>
-
-    
-  
-
-  
-    
-    
-      
-  
-  <section class="widget category desktop pjax">
-    
-  <header>
-    
-      <a href='/blog/categories/'><i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i><span class='name'>文章分类</span></a>
-    
-  </header>
-
-
-    <div class='content'>
-      <ul class="entry navigation">
-        
-          <li><a class="flat-box"
-            title="/categories/Linux/" href="/categories/Linux/"
-            active-action="action-categoriesLinux"
-            ><div class='name'>Linux</div><div class='badge'>(2)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/bugs/" href="/categories/bugs/"
-            active-action="action-categoriesbugs"
-            ><div class='name'>bugs</div><div class='badge'>(2)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/use/" href="/categories/use/"
-            active-action="action-categoriesuse"
-            ><div class='name'>use</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/%E5%88%86%E7%B1%BB/" href="/categories/%E5%88%86%E7%B1%BB/"
-            active-action="action-categoriesE58886E7B1BB"
-            ><div class='name'>分类</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/%E7%AE%97%E6%B3%95/" href="/categories/%E7%AE%97%E6%B3%95/"
-            active-action="action-categoriesE7AE97E6B395"
-            ><div class='name'>算法</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/%E8%AE%BA%E6%96%87/" href="/categories/%E8%AE%BA%E6%96%87/"
-            active-action="action-categoriesE8AEBAE69687"
-            ><div class='name'>论文</div><div class='badge'>(2)</div></a></li>
-        
-          <li><a class="flat-box child"
-            title="/categories/%E8%AE%BA%E6%96%87/%E7%AE%97%E6%B3%95/" href="/categories/%E8%AE%BA%E6%96%87/%E7%AE%97%E6%B3%95/"
-            active-action="action-categoriesE8AEBAE69687E7AE97E6B395"
-            ><div class='name'>算法</div><div class='badge'>(1)</div></a></li>
-        
-      </ul>
-    </div>
-  </section>
-
-
-    
-  
-
-  
-    
-    
-      
-  
-  <section class="widget tagcloud desktop mobile pjax">
-    
-  <header>
-    
-      <a href='/blog/tags/'><i class="fa-solid fa-tags fa-fw" aria-hidden="true"></i><span class='name'>热门标签</span></a>
-    
-  </header>
-
-
-    <div class='content'>
-      <a href="/tags/bin%E7%9B%AE%E5%BD%95/" style="font-size: 14px; color: #999">bin目录</a> <a href="/tags/mysql/" style="font-size: 14px; color: #999">mysql</a> <a href="/tags/nginx/" style="font-size: 14px; color: #999">nginx</a> <a href="/tags/picgo/" style="font-size: 14px; color: #999">picgo</a> <a href="/tags/redis/" style="font-size: 14px; color: #999">redis</a> <a href="/tags/test/" style="font-size: 14px; color: #999">test</a> <a href="/tags/%E6%A0%87%E7%AD%BE%E5%90%8D/" style="font-size: 14px; color: #999">标签名</a> <a href="/tags/%E6%B5%8F%E8%A7%88%E5%99%A8%E6%8F%92%E4%BB%B6/" style="font-size: 14px; color: #999">浏览器插件</a> <a href="/tags/%E7%AE%97%E6%B3%95/" style="font-size: 14px; color: #999">算法</a> <a href="/tags/%E8%AE%BA%E6%96%87/" style="font-size: 14px; color: #999">论文</a>
-    </div>
-  </section>
-
-
-    
-  
-
-  
-
-  
-    
-    
-      
-<section class="widget text desktop mobile pjax">
-  
-  <header>
-    
-      <i class="fab fa-github fa-fw" aria-hidden="true"></i><span class='name'>点个赞吧</span>
-    
-  </header>
-
-
-  <div class='content'>
-    
-  </div>
-</section>
-
     
   
 
 
 <div class="widget-sticky pjax">
 
+  
+  
+
+
+  <div class="">
+    <!-- pjax占位 -->
+  </div>
+
+  
+
 </div>
 
 
 <!-- 没有 pjax 占位会报错 万恶的 pjax -->
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
 
   <div class="pjax">
     <!-- pjax占位 -->
@@ -2691,13 +2696,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </aside>
 
 
+
           <!--此文件用来存放一些不方便取值的变量-->
 <!--思路大概是将值藏到重加载的区域内-->
 
 <pjax>
 <script>
   window.pdata={}
-  pdata.ispage=false;
+  pdata.ispage=true;
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   pdata.commentConfig={};
@@ -3227,7 +3233,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"怒涛卷霜雪  天堑无涯","url":"http://yoursite.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"吴涛","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://yoursite.com/","sameAs":["https://github.com/volantis-x"],"description":"test description"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://yoursite.com/","name":"怒涛卷霜雪  天堑无涯"}},{"@type":"ListItem","position":2,"item":{"@id":"http://yoursite.com/tags/nginx/","name":"nginx"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"怒涛卷霜雪  天堑无涯","url":"http://yoursite.com/","keywords":null,"description":"test description","author":{"@type":"Person","name":"吴涛","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://yoursite.com/","description":"test description"},"publisher":{"@type":"Organization","name":"怒涛卷霜雪  天堑无涯","url":"http://yoursite.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://yoursite.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","description":"test description","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage"},"author":{"@type":"Person","name":"吴涛","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://yoursite.com/"},"publisher":{"@type":"Organization","name":"怒涛卷霜雪  天堑无涯","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"wordCount":0,"image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"怒涛卷霜雪  天堑无涯","url":"http://yoursite.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"吴涛","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://yoursite.com/","sameAs":["https://github.com/volantis-x"],"description":"test description"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://yoursite.com/","name":"怒涛卷霜雪  天堑无涯"}},{"@type":"ListItem","position":2,"item":{"@id":"http://yoursite.com/categories/Linux/","name":"Linux"}},{"@type":"ListItem","position":3,"item":{"@id":"http://yoursite.com/2023/05/25/Linux中的各种bin目录/","name":"Linux中的各种bin目录"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"怒涛卷霜雪  天堑无涯","url":"http://yoursite.com/","keywords":null,"description":"test description","author":{"@type":"Person","name":"吴涛","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://yoursite.com/","description":"test description"},"publisher":{"@type":"Organization","name":"怒涛卷霜雪  天堑无涯","url":"http://yoursite.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://yoursite.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"Linux中的各种bin目录","description":"test description","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"http://yoursite.com/2023/05/25/Linux%E4%B8%AD%E7%9A%84%E5%90%84%E7%A7%8Dbin%E7%9B%AE%E5%BD%95/"},"author":{"@type":"Person","name":"吴涛","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://yoursite.com/"},"publisher":{"@type":"Organization","name":"怒涛卷霜雪  天堑无涯","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://yoursite.com/2023/05/25/Linux%E4%B8%AD%E7%9A%84%E5%90%84%E7%A7%8Dbin%E7%9B%AE%E5%BD%95/","wordCount":0,"datePublished":"2023-05-24T16:00:00.000Z","dateModified":"2023-05-31T11:07:54.305Z","articleSection":"Linux","keywords":"bin目录","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
