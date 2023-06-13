@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <!-- SEO相关 -->
   <meta name="robots" content="noindex,follow">
-  <link rel="canonical" href="http://yoursite.com/tags/wsl/"/>
+  <link rel="canonical" href="http://yoursite.com/tags/bash-4-2/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -32,13 +32,13 @@
 
   <!-- feed -->
   <!-- 页面元数据 -->
-  <title>标签：wsl - 怒涛卷霜雪  天堑无涯</title>
+  <title>标签：bash-4.2$ - 怒涛卷霜雪  天堑无涯</title>
   <meta name="keywords" content="null">
   <meta desc name="description" content="test description - 吴涛 - 怒涛卷霜雪  天堑无涯">
   
 <meta property="og:type" content="website">
 <meta property="og:title" content="怒涛卷霜雪  天堑无涯">
-<meta property="og:url" content="http://yoursite.com/tags/wsl/index.html">
+<meta property="og:url" content="http://yoursite.com/tags/bash-4-2/index.html">
 <meta property="og:site_name" content="怒涛卷霜雪  天堑无涯">
 <meta property="og:description" content="test description">
 <meta property="og:locale" content="zh_CN">
@@ -2413,7 +2413,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           <div class='post-wrapper'>
             <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2023/05/25/WSL2/">
+  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2023/05/03/解决Linux用户出现bash-4.2$问题/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="怒涛卷霜雪  天堑无涯">
   </span>
@@ -2431,29 +2431,20 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
     <h2 class="article-title"  itemprop="name headline">
-      <a href="/2023/05/25/WSL2/"  itemprop="url">
-        windows安装WSL
+      <a href="/2023/05/03/%E8%A7%A3%E5%86%B3Linux%E7%94%A8%E6%88%B7%E5%87%BA%E7%8E%B0bash-4.2$%E9%97%AE%E9%A2%98/"  itemprop="url">
+        解决切换用户出现bash-4.2$问题
       </a>
     </h2>
   
   <div class='md article-desc' itemprop="articleBody">
     
       
-        Windows下安装wsl
-开启系统的一下设置
-虚拟化设置
+        ##【问题描述】
+linux中创建了一个xhh用户，然后使用su命令切换用户后，终端提示符显示成“bash-4.2$”而不是[root@localhost xhh]#，导致ll等命令无法执行。
+123[root@localhost hadoop] # su hadoopbash-4.2$ llbash: ll: 未找到命令
 
-
-
-系统设置
-
-
-
-​	控制面板-&gt;程序-&gt;启用或关闭 windows 功能，开启 Windows 虚拟化和 Linux 子系统（WSL2)以及Hyper-V
-​	勾选完成后，Windows11 会自己下载些东西，并提示你重启。等电脑彻底重启完以后，进行后续操作
-
-
-打开Power Shell 以管理员身份输入下方代码...
+【原因】没有在home目录下创建对应的目录导致。
+【解决方法】使用...
       
     
   </div>
@@ -2461,7 +2452,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='meta-v3' line_style='solid'>
       <div>
         
-        <time itemprop="dateCreated datePublished" datetime="2023-05-25T00:00:00+08:00">2023-05-25</time>
+        <time itemprop="dateCreated datePublished" datetime="2023-05-03T00:00:00+08:00">2023-05-03</time>
         
           <span class="dot"></span>
           <a class="category-link" href="/categories/Linux/">Linux</a>
@@ -2474,7 +2465,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       </div>
       
         <div>
-          <a class='readmore' href='/2023/05/25/WSL2/' itemprop="url">
+          <a class='readmore' href='/2023/05/03/%E8%A7%A3%E5%86%B3Linux%E7%94%A8%E6%88%B7%E5%87%BA%E7%8E%B0bash-4.2$%E9%97%AE%E9%A2%98/' itemprop="url">
             阅读全文
           </a>
         </div>
@@ -3247,7 +3238,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"怒涛卷霜雪  天堑无涯","url":"http://yoursite.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"吴涛","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://yoursite.com/","sameAs":["https://github.com/volantis-x"],"description":"test description"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://yoursite.com/","name":"怒涛卷霜雪  天堑无涯"}},{"@type":"ListItem","position":2,"item":{"@id":"http://yoursite.com/tags/wsl/","name":"wsl"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"怒涛卷霜雪  天堑无涯","url":"http://yoursite.com/","keywords":null,"description":"test description","author":{"@type":"Person","name":"吴涛","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://yoursite.com/","description":"test description"},"publisher":{"@type":"Organization","name":"怒涛卷霜雪  天堑无涯","url":"http://yoursite.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://yoursite.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","description":"test description","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage"},"author":{"@type":"Person","name":"吴涛","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://yoursite.com/"},"publisher":{"@type":"Organization","name":"怒涛卷霜雪  天堑无涯","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"wordCount":0,"image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"怒涛卷霜雪  天堑无涯","url":"http://yoursite.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"吴涛","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://yoursite.com/","sameAs":["https://github.com/volantis-x"],"description":"test description"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://yoursite.com/","name":"怒涛卷霜雪  天堑无涯"}},{"@type":"ListItem","position":2,"item":{"@id":"http://yoursite.com/tags/bash-4.2$/","name":"bash-4.2$"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"怒涛卷霜雪  天堑无涯","url":"http://yoursite.com/","keywords":null,"description":"test description","author":{"@type":"Person","name":"吴涛","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://yoursite.com/","description":"test description"},"publisher":{"@type":"Organization","name":"怒涛卷霜雪  天堑无涯","url":"http://yoursite.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://yoursite.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","description":"test description","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage"},"author":{"@type":"Person","name":"吴涛","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://yoursite.com/"},"publisher":{"@type":"Organization","name":"怒涛卷霜雪  天堑无涯","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"wordCount":0,"image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
