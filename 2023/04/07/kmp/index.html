@@ -5,8 +5,8 @@
   <meta name="Volantis" content="5.7.10">
   <meta charset="utf-8">
   <!-- SEO相关 -->
-  <meta name="robots" content="noindex,follow">
-  <link rel="canonical" href="http://breadwinners.top/tags/手写堆/"/>
+  
+  <link rel="canonical" href="http://breadwinners.top/2023/04/07/kmp/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -32,18 +32,21 @@
 
   <!-- feed -->
   <!-- 页面元数据 -->
-  <title>标签：手写堆 - 怒涛卷霜雪  天堑无涯</title>
-  <meta name="keywords" content="null">
+  <title>kmp - 怒涛卷霜雪  天堑无涯</title>
+  <meta name="keywords" content="kmp,null">
   <meta desc name="description" content="test description - 吴涛 - 怒涛卷霜雪  天堑无涯">
   
-<meta property="og:type" content="website">
-<meta property="og:title" content="怒涛卷霜雪  天堑无涯">
-<meta property="og:url" content="http://breadwinners.top/tags/%E6%89%8B%E5%86%99%E5%A0%86/index.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="kmp">
+<meta property="og:url" content="http://breadwinners.top/2023/04/07/kmp/index.html">
 <meta property="og:site_name" content="怒涛卷霜雪  天堑无涯">
-<meta property="og:description" content="test description">
+<meta property="og:description" content="next数组的本质其实是寻找子串中“相同前后缀”的长度，并且一定是最长的前后缀  如果下一个字符依然相同的话，直 接都成了一个更长的前后缀，长度+1,  下一个字符不同的话">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+<meta property="article:published_time" content="2023-04-06T16:00:00.000Z">
+<meta property="article:modified_time" content="2023-07-11T01:48:27.795Z">
 <meta property="article:author" content="吴涛">
+<meta property="article:tag" content="kmp">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
   <style>
@@ -2318,7 +2321,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
       <!-- see: /layout/_partial/scripts/_ctrl/coverCtrl.ejs -->
-      <div id="none" class='cover-wrapper  search' style="display: none;">
+      <div id="none" class='cover-wrapper post search' style="display: none;">
         
   <div class='cover-bg lazyload placeholder' data-bg="https://tt-1316429231.cos.ap-nanjing.myqcloud.com/imgs/222.png"></div>
 
@@ -2395,25 +2398,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <div id="safearea">
         <div class="body-wrapper">
           
-
 <div id="l_main" class=''>
-  
-    
-      
-  <section class="post-list">
-    
-      
-        
-          
-        
-      
-    
-    
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://breadwinners.top/2023/04/20/堆/">
+  <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow floatable blur article-type-post" id="post" itemscope itemprop="blogPost">
+  <link itemprop="mainEntityOfPage" href="http://breadwinners.top/2023/04/07/kmp/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="怒涛卷霜雪  天堑无涯">
   </span>
@@ -2422,66 +2409,216 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <meta itemprop="description" content="test description">
   </span>
   
-  
+
+
   
     <span hidden>
       <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
     </span>
   
-  
+  <div class="article-meta" id="top">
     
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2023/04/20/%E5%A0%86/"  itemprop="url">
-        堆Heap
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
     
-      
-        堆12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364// 如何手写一个堆？完全二叉树 5个操作// 1. 插入一个数         heap[ ++ size] = x; up(size);// 2. 求...
-      
+    
+      <h1 class="title" itemprop="name headline">
+        kmp
+      </h1>
+      <div class='new-meta-box'>
+        
+          
+            
+  <div class='new-meta-item category'>
+    <i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>
+    <a class="category-link" href="/categories/%E7%AE%97%E6%B3%95/">算法</a>
+    
+      <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+        <a href="/categories/%E7%AE%97%E6%B3%95/" itemprop="url"><span itemprop="name">算法</span></a>
+      </span>
     
   </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2023-04-20T00:00:00+08:00">2023-04-20</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E7%AE%97%E6%B3%95/">算法</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E7%AE%97%E6%B3%95/" itemprop="url"><span itemprop="name">算法</span></a>
-            </span>
+
+
           
         
+          
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2023-04-07T00:00:00+08:00">
+  <a class='notlink'>
+    <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：2023年4月7日</p>
+  </a>
+</div>
+
+          
+        
+        <!-- Custom Files topMeta begin-->
+        
+        <!-- Custom Files topMeta end-->
       </div>
+    
+  </div>
+
+
+  <div id="layoutHelper-page-plugins"></div>
+  <div id="post-body" itemprop="articleBody">
+    <p><strong>next数组的本质其实是寻找子串中“相同前后缀”的长度，并且一定是最长的前后缀</strong></p>
+<p><img src="https://tt-1316429231.cos.ap-nanjing.myqcloud.com/imgs/image-20230127114851532.png" class="lazyload" data-srcset="https://tt-1316429231.cos.ap-nanjing.myqcloud.com/imgs/image-20230127114851532.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20230127114851532"></p>
+<p>如果下一个字符依然相同的话，直</p>
+<p>接都成了一个更长的前后缀，长度<code>+1</code>,</p>
+<p><img src="https://tt-1316429231.cos.ap-nanjing.myqcloud.com/imgs/image-20230127114940144.png" class="lazyload" data-srcset="https://tt-1316429231.cos.ap-nanjing.myqcloud.com/imgs/image-20230127114940144.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20230127114940144"></p>
+<p>下一个字符不同的话</p>
+<p><img src="https://tt-1316429231.cos.ap-nanjing.myqcloud.com/imgs/image-20230127115131590.png" class="lazyload" data-srcset="https://tt-1316429231.cos.ap-nanjing.myqcloud.com/imgs/image-20230127115131590.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20230127115131590"></p>
+<p><img src="https://tt-1316429231.cos.ap-nanjing.myqcloud.com/imgs/image-20230127115154896.png" class="lazyload" data-srcset="https://tt-1316429231.cos.ap-nanjing.myqcloud.com/imgs/image-20230127115154896.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20230127115154896"></p>
+<p><img src="https://tt-1316429231.cos.ap-nanjing.myqcloud.com/imgs/image-20230127115853718.png" class="lazyload" data-srcset="https://tt-1316429231.cos.ap-nanjing.myqcloud.com/imgs/image-20230127115853718.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20230127115853718"></p>
+<p><img src="https://tt-1316429231.cos.ap-nanjing.myqcloud.com/imgs/image-20230127115900722.png" class="lazyload" data-srcset="https://tt-1316429231.cos.ap-nanjing.myqcloud.com/imgs/image-20230127115900722.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20230127115900722"></p>
+<p><img src="https://tt-1316429231.cos.ap-nanjing.myqcloud.com/imgs/image-20230127115906437.png" class="lazyload" data-srcset="https://tt-1316429231.cos.ap-nanjing.myqcloud.com/imgs/image-20230127115906437.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20230127115906437"></p>
+<p><img src="https://tt-1316429231.cos.ap-nanjing.myqcloud.com/imgs/image-20230127120337183.png" class="lazyload" data-srcset="https://tt-1316429231.cos.ap-nanjing.myqcloud.com/imgs/image-20230127120337183.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20230127120337183"></p>
+<p><img src="https://tt-1316429231.cos.ap-nanjing.myqcloud.com/imgs/image-20230127120357778.png" class="lazyload" data-srcset="https://tt-1316429231.cos.ap-nanjing.myqcloud.com/imgs/image-20230127120357778.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20230127120357778"></p>
+
+  </div>
+  
+  
+    
+    <div class='footer'>
+       <!-- 参考资料、相关资料等 -->
       
-        <div>
-          <a class='readmore' href='/2023/04/20/%E5%A0%86/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
+       <!-- 相关文章 -->
+      
+      <!-- 版权声明组件 -->
+      
+      <!-- 打赏组件 -->
       
     </div>
   
+  
+    
 
+
+  <div class='article-meta' id="bottom">
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2023-07-11T09:48:27+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：2023年7月11日</p>
+  </a>
 </div>
 
-          </div>
         
       
-    
-  </section>
+        
+          
   
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/kmp/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>kmp</p></a></div>
+  <span hidden itemprop="keywords">kmp</span>
+
+
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
     
+      
+        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://breadwinners.top/2023/04/07/kmp/&title=kmp - 怒涛卷霜雪  天堑无涯&summary="
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qq.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qq.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://breadwinners.top/2023/04/07/kmp/&title=kmp - 怒涛卷霜雪  天堑无涯&summary="
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qzone.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qzone.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://service.weibo.com/share/share.php?url=http://breadwinners.top/2023/04/07/kmp/&title=kmp - 怒涛卷霜雪  天堑无涯&summary="
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/weibo.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/weibo.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+
+
+        
+      
+    </div>
+    <!-- Custom Files bottomMeta begin -->
+    
+    <!-- Custom Files bottomMeta end -->
+  </div>
+
+
+  
+  
+
+  
+    <div class="prev-next">
+      
+        <a class='prev' href='/2023/04/07/%E5%BF%AB%E6%8E%92%E9%97%AE%E9%A2%98/'>
+          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>快排和快选</p>
+          <p class='content'>快速排序123456789101112131415161718192021222324252627282930313233343536#include &lt;algorithm&gt;#inc...</p>
+        </a>
+      
+      
+        <a class='next' href='/2023/04/06/%E4%BA%8C%E5%88%86%E6%A8%A1%E6%9D%BF/'>
+          <p class='title'>二分法和模板<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>二分的本质是寻找已知数据中，一部分满足某种性质，另一部分不满足某种性质，寻找这个边界点二分是寻找边界点，左边界点或者是右边界点，而边界点一定是两种性质的过渡点，
+在思考过程中，不知道如何确定l ...</p>
+        </a>
+      
+    </div>
+  
+  <!-- Custom Files postEnd begin-->
+  
+  <!-- Custom Files postEnd end-->
+</article>
+
+
   
 
 
+  <article class="post white-box shadow floatable blur" id="comments">
+    <span hidden>
+      <meta itemprop="discussionUrl" content="/2023/04/07/kmp/index.html#comments">
+    </span>
+    <p ct><i class='fa-solid fa-comments'></i> 评论</p>
     
-  
+
+    <div id="layoutHelper-comments"></div>
+
+  </article>
+
+
+
+
+
+
 </div>
 <aside id='l_side' itemscope itemtype="http://schema.org/WPSideBar">
   
@@ -2490,186 +2627,42 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
       
-<section class="widget blogger desktop mobile pjax">
-  <div class='content'>
-    
-      
-        <a class='avatar flat-box rectangle' href='/about/'>
-          <img no-lazy src='https://tt-1316429231.cos.ap-nanjing.myqcloud.com/imgs/222.png'/>
-        </a>
-      
-    
-    
-      <div class='text'>
-        
-        
-        
-          <p><span id="jinrishici-sentence">怒涛卷霜雪  天堑无涯</span></p>
-          <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
-        
-      </div>
-    
-    
-      <div class="social-wrapper">
-        
-          
-            <a href="/atom.xml"
-              class="social fa-solid fa-rss flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="mailto:wutao222666@163.com"
-              class="social fa-solid fa-envelope flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="https://github.com/breadwinnert/"
-              class="social fab fa-github flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-      </div>
-    
-  </div>
-</section>
-
-    
-  
-
-  
-    
-    
-      
-  
-  <section class="widget category desktop pjax">
-    
-  <header>
-    
-      <a href='/blog/categories/'><i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i><span class='name'>文章分类</span></a>
-    
-  </header>
-
-
-    <div class='content'>
-      <ul class="entry navigation">
-        
-          <li><a class="flat-box"
-            title="/categories/Linux/" href="/categories/Linux/"
-            active-action="action-categoriesLinux"
-            ><div class='name'>Linux</div><div class='badge'>(6)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/bugs/" href="/categories/bugs/"
-            active-action="action-categoriesbugs"
-            ><div class='name'>bugs</div><div class='badge'>(2)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/use/" href="/categories/use/"
-            active-action="action-categoriesuse"
-            ><div class='name'>use</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/%E5%88%86%E7%B1%BB/" href="/categories/%E5%88%86%E7%B1%BB/"
-            active-action="action-categoriesE58886E7B1BB"
-            ><div class='name'>分类</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/" href="/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/"
-            active-action="action-categoriesE5A4A7E695B0E68DAE"
-            ><div class='name'>大数据</div><div class='badge'>(3)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/%E5%B0%8F%E6%8A%80%E5%B7%A7/" href="/categories/%E5%B0%8F%E6%8A%80%E5%B7%A7/"
-            active-action="action-categoriesE5B08FE68A80E5B7A7"
-            ><div class='name'>小技巧</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/%E7%AE%97%E6%B3%95/" href="/categories/%E7%AE%97%E6%B3%95/"
-            active-action="action-categoriesE7AE97E6B395"
-            ><div class='name'>算法</div><div class='badge'>(22)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/%E8%AE%BA%E6%96%87/" href="/categories/%E8%AE%BA%E6%96%87/"
-            active-action="action-categoriesE8AEBAE69687"
-            ><div class='name'>论文</div><div class='badge'>(2)</div></a></li>
-        
-          <li><a class="flat-box child"
-            title="/categories/%E8%AE%BA%E6%96%87/%E7%AE%97%E6%B3%95/" href="/categories/%E8%AE%BA%E6%96%87/%E7%AE%97%E6%B3%95/"
-            active-action="action-categoriesE8AEBAE69687E7AE97E6B395"
-            ><div class='name'>算法</div><div class='badge'>(1)</div></a></li>
-        
-      </ul>
-    </div>
-  </section>
-
-
-    
-  
-
-  
-    
-    
-      
-  
-  <section class="widget tagcloud desktop mobile pjax">
-    
-  <header>
-    
-      <a href='/blog/tags/'><i class="fa-solid fa-tags fa-fw" aria-hidden="true"></i><span class='name'>热门标签</span></a>
-    
-  </header>
-
-
-    <div class='content'>
-      <a href="/tags/bashrc/" style="font-size: 14px; color: #999">.bashrc</a> <a href="/tags/DP/" style="font-size: 14px; color: #999">DP</a> <a href="/tags/HashMap/" style="font-size: 14px; color: #999">HashMap</a> <a href="/tags/STL/" style="font-size: 14px; color: #999">STL</a> <a href="/tags/Trie/" style="font-size: 14px; color: #999">Trie</a> <a href="/tags/bash-4-2/" style="font-size: 14px; color: #999">bash-4.2$</a> <a href="/tags/bfs/" style="font-size: 14px; color: #999">bfs</a> <a href="/tags/bin%E7%9B%AE%E5%BD%95/" style="font-size: 14px; color: #999">bin目录</a> <a href="/tags/bugs/" style="font-size: 14px; color: #999">bugs</a> <a href="/tags/cin/" style="font-size: 14px; color: #999">cin</a> <a href="/tags/cout/" style="font-size: 14px; color: #999">cout</a> <a href="/tags/dfs/" style="font-size: 14px; color: #999">dfs</a> <a href="/tags/flume/" style="font-size: 14px; color: #999">flume</a> <a href="/tags/graph/" style="font-size: 14px; color: #999">graph</a> <a href="/tags/greedy/" style="font-size: 14px; color: #999">greedy</a> <a href="/tags/heap/" style="font-size: 14px; color: #999">heap</a> <a href="/tags/kmp/" style="font-size: 14px; color: #999">kmp</a> <a href="/tags/maven/" style="font-size: 14px; color: #999">maven</a> <a href="/tags/mysql/" style="font-size: 14px; color: #999">mysql</a> <a href="/tags/nginx/" style="font-size: 14px; color: #999">nginx</a> <a href="/tags/picgo/" style="font-size: 14px; color: #999">picgo</a> <a href="/tags/quick/" style="font-size: 14px; color: #999">quick</a> <a href="/tags/redis/" style="font-size: 14px; color: #999">redis</a> <a href="/tags/sbt/" style="font-size: 14px; color: #999">sbt</a> <a href="/tags/sort/" style="font-size: 14px; color: #999">sort</a> <a href="/tags/spark/" style="font-size: 24px; color: #555">spark</a> <a href="/tags/test/" style="font-size: 14px; color: #999">test</a> <a href="/tags/wsl/" style="font-size: 14px; color: #999">wsl</a> <a href="/tags/wsl2/" style="font-size: 14px; color: #999">wsl2</a> <a href="/tags/%E4%B8%8D%E8%83%BD%E5%87%91%E5%87%BA%E7%9A%84%E6%9C%80%E5%A4%A7%E6%95%B4%E6%95%B0/" style="font-size: 14px; color: #999">不能凑出的最大整数</a> <a href="/tags/%E4%BA%8C%E5%88%86/" style="font-size: 14px; color: #999">二分</a> <a href="/tags/%E5%89%8D%E7%BC%80%E5%92%8C/" style="font-size: 14px; color: #999">前缀和</a> <a href="/tags/%E5%8F%8C%E6%8C%87%E9%92%88/" style="font-size: 14px; color: #999">双指针</a> <a href="/tags/%E5%9B%BE%E8%AE%BA/" style="font-size: 14px; color: #999">图论</a> <a href="/tags/%E5%B7%AE%E5%88%86/" style="font-size: 14px; color: #999">差分</a> <a href="/tags/%E6%89%8B%E5%86%99%E5%A0%86/" style="font-size: 14px; color: #999">手写堆</a> <a href="/tags/%E6%89%93%E5%8C%85%E4%BE%9D%E8%B5%96/" style="font-size: 14px; color: #999">打包依赖</a> <a href="/tags/%E6%95%B0%E7%BB%84%E5%8D%95%E9%93%BE%E8%A1%A8/" style="font-size: 14px; color: #999">数组单链表</a> <a href="/tags/%E6%95%B0%E8%AE%BA/" style="font-size: 14px; color: #999">数论</a> <a href="/tags/%E6%9A%B4%E5%8A%9B/" style="font-size: 24px; color: #555">暴力</a> <a href="/tags/%E6%A0%87%E7%AD%BE%E5%90%8D/" style="font-size: 14px; color: #999">标签名</a> <a href="/tags/%E6%A8%A1%E6%8B%9F/" style="font-size: 24px; color: #555">模拟</a> <a href="/tags/%E6%B5%8F%E8%A7%88%E5%99%A8%E6%8F%92%E4%BB%B6/" style="font-size: 14px; color: #999">浏览器插件</a> <a href="/tags/%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3/" style="font-size: 14px; color: #999">滑动窗口</a> <a href="/tags/%E7%A6%BB%E6%95%A3%E5%8C%96/" style="font-size: 14px; color: #999">离散化</a> <a href="/tags/%E8%AE%BA%E6%96%87/" style="font-size: 14px; color: #999">论文</a> <a href="/tags/%E8%B4%AA%E5%BF%83/" style="font-size: 14px; color: #999">贪心</a> <a href="/tags/%E8%BF%9E%E9%80%9A%E5%9D%97/" style="font-size: 14px; color: #999">连通块</a> <a href="/tags/%E9%9D%99%E6%80%81ip/" style="font-size: 14px; color: #999">静态ip</a>
-    </div>
-  </section>
-
-
-    
-  
-
-  
-
-  
-    
-    
-      
-<section class="widget text desktop mobile pjax">
-  
-  <header>
-    
-      <i class="fab fa-github fa-fw" aria-hidden="true"></i><span class='name'>点个赞吧</span>
-    
-  </header>
-
-
-  <div class='content'>
-    
-  </div>
-</section>
-
     
   
 
 
 <div class="widget-sticky pjax">
 
+  
+  
+
+
+  <div class="">
+    <!-- pjax占位 -->
+  </div>
+
+  
+
 </div>
 
 
 <!-- 没有 pjax 占位会报错 万恶的 pjax -->
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
 
   <div class="pjax">
     <!-- pjax占位 -->
@@ -2697,13 +2690,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </aside>
 
 
+
           <!--此文件用来存放一些不方便取值的变量-->
 <!--思路大概是将值藏到重加载的区域内-->
 
 <pjax>
 <script>
   window.pdata={}
-  pdata.ispage=false;
+  pdata.ispage=true;
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   pdata.commentConfig={};
@@ -3233,7 +3227,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"怒涛卷霜雪  天堑无涯","url":"http://breadwinners.top/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"吴涛","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://breadwinners.top/","sameAs":["https://github.com/volantis-x"],"description":"test description"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://breadwinners.top/","name":"怒涛卷霜雪  天堑无涯"}},{"@type":"ListItem","position":2,"item":{"@id":"http://breadwinners.top/tags/手写堆/","name":"手写堆"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"怒涛卷霜雪  天堑无涯","url":"http://breadwinners.top/","keywords":null,"description":"test description","author":{"@type":"Person","name":"吴涛","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://breadwinners.top/","description":"test description"},"publisher":{"@type":"Organization","name":"怒涛卷霜雪  天堑无涯","url":"http://breadwinners.top/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://breadwinners.top?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","description":"test description","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage"},"author":{"@type":"Person","name":"吴涛","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://breadwinners.top/"},"publisher":{"@type":"Organization","name":"怒涛卷霜雪  天堑无涯","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"wordCount":0,"image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"怒涛卷霜雪  天堑无涯","url":"http://breadwinners.top/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"吴涛","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://breadwinners.top/","sameAs":["https://github.com/volantis-x"],"description":"test description"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://breadwinners.top/","name":"怒涛卷霜雪  天堑无涯"}},{"@type":"ListItem","position":2,"item":{"@id":"http://breadwinners.top/categories/算法/","name":"算法"}},{"@type":"ListItem","position":3,"item":{"@id":"http://breadwinners.top/2023/04/07/kmp/","name":"kmp"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"怒涛卷霜雪  天堑无涯","url":"http://breadwinners.top/","keywords":null,"description":"test description","author":{"@type":"Person","name":"吴涛","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://breadwinners.top/","description":"test description"},"publisher":{"@type":"Organization","name":"怒涛卷霜雪  天堑无涯","url":"http://breadwinners.top/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://breadwinners.top?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"kmp","description":"test description","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"http://breadwinners.top/2023/04/07/kmp/"},"author":{"@type":"Person","name":"吴涛","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://breadwinners.top/"},"publisher":{"@type":"Organization","name":"怒涛卷霜雪  天堑无涯","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://breadwinners.top/2023/04/07/kmp/","wordCount":0,"datePublished":"2023-04-06T16:00:00.000Z","dateModified":"2023-07-11T01:48:27.795Z","articleSection":"算法","keywords":"kmp","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
