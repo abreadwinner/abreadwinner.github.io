@@ -1625,7 +1625,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: "env",
     cdn: {"js":{"app":"/js/app.js","parallax":"/js/plugins/parallax.js","rightMenu":"/js/plugins/rightMenu.js","rightMenus":"/js/plugins/rightMenus.js","sites":"/js/plugins/tags/sites.js","friends":"/js/plugins/tags/friends.js","contributors":"/js/plugins/tags/contributors.js","search":"/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1689768660101),
+    lastupdate: new Date(1690012424107),
     sidebar: {
       for_page: ["blogger","category","tagcloud","donate","text"],
       for_post: ["toc"],
@@ -2418,9 +2418,149 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           
         
+          
+        
+          
+        
       
     
     
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
+  <link itemprop="mainEntityOfPage" href="http://breadwinners.top/2023/07/20/pytorch/centos7安装显卡驱动配置环境等/">
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="怒涛卷霜雪  天堑无涯">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
+    <meta itemprop="name" content="怒涛卷霜雪  天堑无涯">
+    <meta itemprop="description" content="test description">
+  </span>
+  
+  
+  
+    <span hidden>
+      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+    </span>
+  
+  
+    
+    <h2 class="article-title"  itemprop="name headline">
+      <a href="/2023/07/20/pytorch/centos7%E5%AE%89%E8%A3%85%E6%98%BE%E5%8D%A1%E9%A9%B1%E5%8A%A8%E9%85%8D%E7%BD%AE%E7%8E%AF%E5%A2%83%E7%AD%89/"  itemprop="url">
+        centos7安装显卡驱动配置环境等
+      </a>
+    </h2>
+  
+  <div class='md article-desc' itemprop="articleBody">
+    
+      
+        驱动安装1. 查看显卡信息Linux查看显卡信息：
+1lspci | grep -i vga
+
+使用nvidia GPU可以：
+1lspci | grep -i nvidia
+
+
+2. 安装环境依赖1yum install kernel-devel gcc -y
+
+3. 检查内核版本和源码版本，保证一致12ls /boot | grep vmlinurpm -aq | grep kernel...
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+        <time itemprop="dateCreated datePublished" datetime="2023-07-20T00:00:00+08:00">2023-07-20</time>
+        
+          <span class="dot"></span>
+          <a class="category-link" href="/categories/Linux/">Linux</a>
+          
+            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+              <a href="/categories/Linux/" itemprop="url"><span itemprop="name">Linux</span></a>
+            </span>
+          
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/2023/07/20/pytorch/centos7%E5%AE%89%E8%A3%85%E6%98%BE%E5%8D%A1%E9%A9%B1%E5%8A%A8%E9%85%8D%E7%BD%AE%E7%8E%AF%E5%A2%83%E7%AD%89/' itemprop="url">
+            阅读全文
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
+  <link itemprop="mainEntityOfPage" href="http://breadwinners.top/2023/07/20/Linux/centos7磁盘分区/">
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="怒涛卷霜雪  天堑无涯">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
+    <meta itemprop="name" content="怒涛卷霜雪  天堑无涯">
+    <meta itemprop="description" content="test description">
+  </span>
+  
+  
+  
+    <span hidden>
+      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+    </span>
+  
+  
+    
+    <h2 class="article-title"  itemprop="name headline">
+      <a href="/2023/07/20/Linux/centos7%E7%A3%81%E7%9B%98%E5%88%86%E5%8C%BA/"  itemprop="url">
+        centos7磁盘分区
+      </a>
+    </h2>
+  
+  <div class='md article-desc' itemprop="articleBody">
+    
+      
+        参考文章
+
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+        <time itemprop="dateCreated datePublished" datetime="2023-07-20T00:00:00+08:00">2023-07-20</time>
+        
+          <span class="dot"></span>
+          <a class="category-link" href="/categories/Linux/">Linux</a>
+          
+            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+              <a href="/categories/Linux/" itemprop="url"><span itemprop="name">Linux</span></a>
+            </span>
+          
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/2023/07/20/Linux/centos7%E7%A3%81%E7%9B%98%E5%88%86%E5%8C%BA/' itemprop="url">
+            阅读全文
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
       
         
           <div class='post-wrapper'>
@@ -2502,7 +2642,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           <div class='post-wrapper'>
             <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://breadwinners.top/2023/05/25/Linux中的各种bin目录/">
+  <link itemprop="mainEntityOfPage" href="http://breadwinners.top/2023/05/25/Linux/Linux中的各种bin目录/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="怒涛卷霜雪  天堑无涯">
   </span>
@@ -2520,7 +2660,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
     <h2 class="article-title"  itemprop="name headline">
-      <a href="/2023/05/25/Linux%E4%B8%AD%E7%9A%84%E5%90%84%E7%A7%8Dbin%E7%9B%AE%E5%BD%95/"  itemprop="url">
+      <a href="/2023/05/25/Linux/Linux%E4%B8%AD%E7%9A%84%E5%90%84%E7%A7%8Dbin%E7%9B%AE%E5%BD%95/"  itemprop="url">
         Linux中的各种bin目录
       </a>
     </h2>
@@ -2552,7 +2692,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       </div>
       
         <div>
-          <a class='readmore' href='/2023/05/25/Linux%E4%B8%AD%E7%9A%84%E5%90%84%E7%A7%8Dbin%E7%9B%AE%E5%BD%95/' itemprop="url">
+          <a class='readmore' href='/2023/05/25/Linux/Linux%E4%B8%AD%E7%9A%84%E5%90%84%E7%A7%8Dbin%E7%9B%AE%E5%BD%95/' itemprop="url">
             阅读全文
           </a>
         </div>
@@ -2568,7 +2708,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           <div class='post-wrapper'>
             <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://breadwinners.top/2023/05/25/profile和.bashrc和profile.d/">
+  <link itemprop="mainEntityOfPage" href="http://breadwinners.top/2023/05/25/Linux/profile和.bashrc和profile.d/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="怒涛卷霜雪  天堑无涯">
   </span>
@@ -2586,7 +2726,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
     <h2 class="article-title"  itemprop="name headline">
-      <a href="/2023/05/25/profile%E5%92%8C.bashrc%E5%92%8Cprofile.d/"  itemprop="url">
+      <a href="/2023/05/25/Linux/profile%E5%92%8C.bashrc%E5%92%8Cprofile.d/"  itemprop="url">
         .bashrc和profile和profile.d与配置环境变量
       </a>
     </h2>
@@ -2625,7 +2765,7 @@ bash 提示符允许你自定义你的终端，并让它在你运行命令时显
       </div>
       
         <div>
-          <a class='readmore' href='/2023/05/25/profile%E5%92%8C.bashrc%E5%92%8Cprofile.d/' itemprop="url">
+          <a class='readmore' href='/2023/05/25/Linux/profile%E5%92%8C.bashrc%E5%92%8Cprofile.d/' itemprop="url">
             阅读全文
           </a>
         </div>
@@ -2641,7 +2781,7 @@ bash 提示符允许你自定义你的终端，并让它在你运行命令时显
         
           <div class='post-wrapper'>
             <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://breadwinners.top/2023/05/23/linux安装redis/">
+  <link itemprop="mainEntityOfPage" href="http://breadwinners.top/2023/05/23/Linux/linux安装redis/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="怒涛卷霜雪  天堑无涯">
   </span>
@@ -2659,7 +2799,7 @@ bash 提示符允许你自定义你的终端，并让它在你运行命令时显
   
     
     <h2 class="article-title"  itemprop="name headline">
-      <a href="/2023/05/23/linux%E5%AE%89%E8%A3%85redis/"  itemprop="url">
+      <a href="/2023/05/23/Linux/linux%E5%AE%89%E8%A3%85redis/"  itemprop="url">
         CentOs7安装Redis
       </a>
     </h2>
@@ -2695,7 +2835,7 @@ bash 提示符允许你自定义你的终端，并让它在你运行命令时显
       </div>
       
         <div>
-          <a class='readmore' href='/2023/05/23/linux%E5%AE%89%E8%A3%85redis/' itemprop="url">
+          <a class='readmore' href='/2023/05/23/Linux/linux%E5%AE%89%E8%A3%85redis/' itemprop="url">
             阅读全文
           </a>
         </div>
@@ -2711,7 +2851,7 @@ bash 提示符允许你自定义你的终端，并让它在你运行命令时显
         
           <div class='post-wrapper'>
             <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://breadwinners.top/2023/05/16/centos设定静态IP/">
+  <link itemprop="mainEntityOfPage" href="http://breadwinners.top/2023/05/16/Linux/centos设定静态IP/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="怒涛卷霜雪  天堑无涯">
   </span>
@@ -2729,7 +2869,7 @@ bash 提示符允许你自定义你的终端，并让它在你运行命令时显
   
     
     <h2 class="article-title"  itemprop="name headline">
-      <a href="/2023/05/16/centos%E8%AE%BE%E5%AE%9A%E9%9D%99%E6%80%81IP/"  itemprop="url">
+      <a href="/2023/05/16/Linux/centos%E8%AE%BE%E5%AE%9A%E9%9D%99%E6%80%81IP/"  itemprop="url">
         centos设置静态IP
       </a>
     </h2>
@@ -2766,7 +2906,7 @@ bash 提示符允许你自定义你的终端，并让它在你运行命令时显
       </div>
       
         <div>
-          <a class='readmore' href='/2023/05/16/centos%E8%AE%BE%E5%AE%9A%E9%9D%99%E6%80%81IP/' itemprop="url">
+          <a class='readmore' href='/2023/05/16/Linux/centos%E8%AE%BE%E5%AE%9A%E9%9D%99%E6%80%81IP/' itemprop="url">
             阅读全文
           </a>
         </div>
@@ -2782,7 +2922,7 @@ bash 提示符允许你自定义你的终端，并让它在你运行命令时显
         
           <div class='post-wrapper'>
             <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://breadwinners.top/2023/05/03/解决Linux用户出现bash-4.2$问题/">
+  <link itemprop="mainEntityOfPage" href="http://breadwinners.top/2023/05/03/Linux/解决Linux用户出现bash-4.2$问题/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="怒涛卷霜雪  天堑无涯">
   </span>
@@ -2800,7 +2940,7 @@ bash 提示符允许你自定义你的终端，并让它在你运行命令时显
   
     
     <h2 class="article-title"  itemprop="name headline">
-      <a href="/2023/05/03/%E8%A7%A3%E5%86%B3Linux%E7%94%A8%E6%88%B7%E5%87%BA%E7%8E%B0bash-4.2$%E9%97%AE%E9%A2%98/"  itemprop="url">
+      <a href="/2023/05/03/Linux/%E8%A7%A3%E5%86%B3Linux%E7%94%A8%E6%88%B7%E5%87%BA%E7%8E%B0bash-4.2$%E9%97%AE%E9%A2%98/"  itemprop="url">
         解决切换用户出现bash-4.2$问题
       </a>
     </h2>
@@ -2834,7 +2974,7 @@ linux中创建了一个xhh用户，然后使用su命令切换用户后，终端�
       </div>
       
         <div>
-          <a class='readmore' href='/2023/05/03/%E8%A7%A3%E5%86%B3Linux%E7%94%A8%E6%88%B7%E5%87%BA%E7%8E%B0bash-4.2$%E9%97%AE%E9%A2%98/' itemprop="url">
+          <a class='readmore' href='/2023/05/03/Linux/%E8%A7%A3%E5%86%B3Linux%E7%94%A8%E6%88%B7%E5%87%BA%E7%8E%B0bash-4.2$%E9%97%AE%E9%A2%98/' itemprop="url">
             阅读全文
           </a>
         </div>
@@ -2850,7 +2990,7 @@ linux中创建了一个xhh用户，然后使用su命令切换用户后，终端�
         
           <div class='post-wrapper'>
             <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://breadwinners.top/2023/04/03/sudo和su和logout/">
+  <link itemprop="mainEntityOfPage" href="http://breadwinners.top/2023/04/03/Linux/sudo和su和logout/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="怒涛卷霜雪  天堑无涯">
   </span>
@@ -2868,7 +3008,7 @@ linux中创建了一个xhh用户，然后使用su命令切换用户后，终端�
   
     
     <h2 class="article-title"  itemprop="name headline">
-      <a href="/2023/04/03/sudo%E5%92%8Csu%E5%92%8Clogout/"  itemprop="url">
+      <a href="/2023/04/03/Linux/sudo%E5%92%8Csu%E5%92%8Clogout/"  itemprop="url">
         Linux中su、sudo
       </a>
     </h2>
@@ -2902,7 +3042,7 @@ sudo是一种权限管理机制，依赖于&#x2F;etc&#x2F;sudoers，其定义了
       </div>
       
         <div>
-          <a class='readmore' href='/2023/04/03/sudo%E5%92%8Csu%E5%92%8Clogout/' itemprop="url">
+          <a class='readmore' href='/2023/04/03/Linux/sudo%E5%92%8Csu%E5%92%8Clogout/' itemprop="url">
             阅读全文
           </a>
         </div>
@@ -3009,7 +3149,7 @@ sudo是一种权限管理机制，依赖于&#x2F;etc&#x2F;sudoers，其定义了
           <li><a class="flat-box"
             title="/categories/Linux/" href="/categories/Linux/"
             active-action="action-categoriesLinux"
-            ><div class='name'>Linux</div><div class='badge'>(7)</div></a></li>
+            ><div class='name'>Linux</div><div class='badge'>(9)</div></a></li>
         
           <li><a class="flat-box"
             title="/categories/Python/" href="/categories/Python/"
@@ -3020,6 +3160,11 @@ sudo是一种权限管理机制，依赖于&#x2F;etc&#x2F;sudoers，其定义了
             title="/categories/bugs/" href="/categories/bugs/"
             active-action="action-categoriesbugs"
             ><div class='name'>bugs</div><div class='badge'>(2)</div></a></li>
+        
+          <li><a class="flat-box"
+            title="/categories/numpy/" href="/categories/numpy/"
+            active-action="action-categoriesnumpy"
+            ><div class='name'>numpy</div><div class='badge'>(1)</div></a></li>
         
           <li><a class="flat-box"
             title="/categories/pandas/" href="/categories/pandas/"
@@ -3094,7 +3239,7 @@ sudo是一种权限管理机制，依赖于&#x2F;etc&#x2F;sudoers，其定义了
 
 
     <div class='content'>
-      <a href="/tags/bashrc/" style="font-size: 14px; color: #999">.bashrc</a> <a href="/tags/DP/" style="font-size: 14px; color: #999">DP</a> <a href="/tags/HashMap/" style="font-size: 14px; color: #999">HashMap</a> <a href="/tags/STL/" style="font-size: 14px; color: #999">STL</a> <a href="/tags/Trie/" style="font-size: 14px; color: #999">Trie</a> <a href="/tags/bash-4-2/" style="font-size: 14px; color: #999">bash-4.2$</a> <a href="/tags/bfs/" style="font-size: 14px; color: #999">bfs</a> <a href="/tags/bin%E7%9B%AE%E5%BD%95/" style="font-size: 14px; color: #999">bin目录</a> <a href="/tags/bugs/" style="font-size: 14px; color: #999">bugs</a> <a href="/tags/centos/" style="font-size: 14px; color: #999">centos</a> <a href="/tags/cin/" style="font-size: 14px; color: #999">cin</a> <a href="/tags/cout/" style="font-size: 14px; color: #999">cout</a> <a href="/tags/dfs/" style="font-size: 14px; color: #999">dfs</a> <a href="/tags/flume/" style="font-size: 14px; color: #999">flume</a> <a href="/tags/frp/" style="font-size: 24px; color: #555">frp</a> <a href="/tags/gcc/" style="font-size: 14px; color: #999">gcc</a> <a href="/tags/gdb/" style="font-size: 14px; color: #999">gdb</a> <a href="/tags/graph/" style="font-size: 14px; color: #999">graph</a> <a href="/tags/greedy/" style="font-size: 14px; color: #999">greedy</a> <a href="/tags/heap/" style="font-size: 14px; color: #999">heap</a> <a href="/tags/kmp/" style="font-size: 14px; color: #999">kmp</a> <a href="/tags/maven/" style="font-size: 14px; color: #999">maven</a> <a href="/tags/mysql/" style="font-size: 14px; color: #999">mysql</a> <a href="/tags/nginx/" style="font-size: 14px; color: #999">nginx</a> <a href="/tags/picgo/" style="font-size: 14px; color: #999">picgo</a> <a href="/tags/quick/" style="font-size: 14px; color: #999">quick</a> <a href="/tags/redis/" style="font-size: 14px; color: #999">redis</a> <a href="/tags/sbt/" style="font-size: 14px; color: #999">sbt</a> <a href="/tags/shape/" style="font-size: 14px; color: #999">shape()</a> <a href="/tags/sort/" style="font-size: 24px; color: #555">sort</a> <a href="/tags/spark/" style="font-size: 24px; color: #555">spark</a> <a href="/tags/su/" style="font-size: 14px; color: #999">su</a> <a href="/tags/sudo/" style="font-size: 14px; color: #999">sudo</a> <a href="/tags/test/" style="font-size: 14px; color: #999">test</a> <a href="/tags/titanic/" style="font-size: 14px; color: #999">titanic</a> <a href="/tags/wsl/" style="font-size: 14px; color: #999">wsl</a> <a href="/tags/wsl2/" style="font-size: 14px; color: #999">wsl2</a> <a href="/tags/%E4%B8%8D%E8%83%BD%E5%87%91%E5%87%BA%E7%9A%84%E6%9C%80%E5%A4%A7%E6%95%B4%E6%95%B0/" style="font-size: 14px; color: #999">不能凑出的最大整数</a> <a href="/tags/%E4%BA%8C%E5%88%86/" style="font-size: 14px; color: #999">二分</a> <a href="/tags/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/" style="font-size: 14px; color: #999">内网穿透</a> <a href="/tags/%E5%89%8D%E7%BC%80%E5%92%8C/" style="font-size: 14px; color: #999">前缀和</a> <a href="/tags/%E5%8F%8C%E6%8C%87%E9%92%88/" style="font-size: 14px; color: #999">双指针</a> <a href="/tags/%E5%9B%BE%E8%AE%BA/" style="font-size: 14px; color: #999">图论</a> <a href="/tags/%E5%AE%B9%E5%99%A8/" style="font-size: 14px; color: #999">容器</a> <a href="/tags/%E5%B7%AE%E5%88%86/" style="font-size: 14px; color: #999">差分</a> <a href="/tags/%E6%89%8B%E5%86%99%E5%A0%86/" style="font-size: 14px; color: #999">手写堆</a> <a href="/tags/%E6%89%93%E5%8C%85%E4%BE%9D%E8%B5%96/" style="font-size: 14px; color: #999">打包依赖</a> <a href="/tags/%E6%95%B0%E7%BB%84%E5%8D%95%E9%93%BE%E8%A1%A8/" style="font-size: 14px; color: #999">数组单链表</a> <a href="/tags/%E6%95%B0%E8%AE%BA/" style="font-size: 14px; color: #999">数论</a> <a href="/tags/%E6%9A%B4%E5%8A%9B/" style="font-size: 24px; color: #555">暴力</a> <a href="/tags/%E6%A0%87%E7%AD%BE%E5%90%8D/" style="font-size: 14px; color: #999">标签名</a> <a href="/tags/%E6%A8%A1%E6%8B%9F/" style="font-size: 24px; color: #555">模拟</a> <a href="/tags/%E6%B5%8F%E8%A7%88%E5%99%A8%E6%8F%92%E4%BB%B6/" style="font-size: 14px; color: #999">浏览器插件</a> <a href="/tags/%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3/" style="font-size: 14px; color: #999">滑动窗口</a> <a href="/tags/%E7%A6%BB%E6%95%A3%E5%8C%96/" style="font-size: 14px; color: #999">离散化</a> <a href="/tags/%E7%A7%91%E5%A4%A7%E6%9C%AA%E6%9D%A5/" style="font-size: 24px; color: #555">科大未来</a> <a href="/tags/%E8%AE%BA%E6%96%87/" style="font-size: 14px; color: #999">论文</a> <a href="/tags/%E8%B4%AA%E5%BF%83/" style="font-size: 14px; color: #999">贪心</a> <a href="/tags/%E8%BF%9C%E7%A8%8B%E5%BC%80%E5%8F%91/" style="font-size: 14px; color: #999">远程开发</a> <a href="/tags/%E8%BF%9E%E9%80%9A%E5%9D%97/" style="font-size: 14px; color: #999">连通块</a> <a href="/tags/%E9%9D%99%E6%80%81ip/" style="font-size: 14px; color: #999">静态ip</a>
+      <a href="/tags/bashrc/" style="font-size: 14px; color: #999">.bashrc</a> <a href="/tags/DP/" style="font-size: 14px; color: #999">DP</a> <a href="/tags/HashMap/" style="font-size: 14px; color: #999">HashMap</a> <a href="/tags/Nvidia/" style="font-size: 14px; color: #999">Nvidia</a> <a href="/tags/STL/" style="font-size: 14px; color: #999">STL</a> <a href="/tags/Trie/" style="font-size: 14px; color: #999">Trie</a> <a href="/tags/axis/" style="font-size: 14px; color: #999">axis</a> <a href="/tags/bash-4-2/" style="font-size: 14px; color: #999">bash-4.2$</a> <a href="/tags/bfs/" style="font-size: 14px; color: #999">bfs</a> <a href="/tags/bin%E7%9B%AE%E5%BD%95/" style="font-size: 14px; color: #999">bin目录</a> <a href="/tags/bugs/" style="font-size: 14px; color: #999">bugs</a> <a href="/tags/centos/" style="font-size: 14px; color: #999">centos</a> <a href="/tags/cin/" style="font-size: 14px; color: #999">cin</a> <a href="/tags/cout/" style="font-size: 14px; color: #999">cout</a> <a href="/tags/cuda/" style="font-size: 14px; color: #999">cuda</a> <a href="/tags/cuda12-2/" style="font-size: 14px; color: #999">cuda12.2</a> <a href="/tags/dfs/" style="font-size: 14px; color: #999">dfs</a> <a href="/tags/flume/" style="font-size: 14px; color: #999">flume</a> <a href="/tags/frp/" style="font-size: 24px; color: #555">frp</a> <a href="/tags/gcc/" style="font-size: 14px; color: #999">gcc</a> <a href="/tags/gdb/" style="font-size: 14px; color: #999">gdb</a> <a href="/tags/graph/" style="font-size: 14px; color: #999">graph</a> <a href="/tags/greedy/" style="font-size: 14px; color: #999">greedy</a> <a href="/tags/heap/" style="font-size: 14px; color: #999">heap</a> <a href="/tags/kmp/" style="font-size: 14px; color: #999">kmp</a> <a href="/tags/lsbsk/" style="font-size: 14px; color: #999">lsbsk</a> <a href="/tags/maven/" style="font-size: 14px; color: #999">maven</a> <a href="/tags/mysql/" style="font-size: 14px; color: #999">mysql</a> <a href="/tags/nginx/" style="font-size: 14px; color: #999">nginx</a> <a href="/tags/picgo/" style="font-size: 14px; color: #999">picgo</a> <a href="/tags/quick/" style="font-size: 14px; color: #999">quick</a> <a href="/tags/redis/" style="font-size: 14px; color: #999">redis</a> <a href="/tags/sbt/" style="font-size: 14px; color: #999">sbt</a> <a href="/tags/shape/" style="font-size: 14px; color: #999">shape()</a> <a href="/tags/sort/" style="font-size: 24px; color: #555">sort</a> <a href="/tags/spark/" style="font-size: 24px; color: #555">spark</a> <a href="/tags/su/" style="font-size: 14px; color: #999">su</a> <a href="/tags/sudo/" style="font-size: 14px; color: #999">sudo</a> <a href="/tags/test/" style="font-size: 14px; color: #999">test</a> <a href="/tags/titanic/" style="font-size: 14px; color: #999">titanic</a> <a href="/tags/wsl/" style="font-size: 14px; color: #999">wsl</a> <a href="/tags/wsl2/" style="font-size: 14px; color: #999">wsl2</a> <a href="/tags/%E4%B8%8D%E8%83%BD%E5%87%91%E5%87%BA%E7%9A%84%E6%9C%80%E5%A4%A7%E6%95%B4%E6%95%B0/" style="font-size: 14px; color: #999">不能凑出的最大整数</a> <a href="/tags/%E4%BA%8C%E5%88%86/" style="font-size: 14px; color: #999">二分</a> <a href="/tags/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/" style="font-size: 14px; color: #999">内网穿透</a> <a href="/tags/%E5%89%8D%E7%BC%80%E5%92%8C/" style="font-size: 14px; color: #999">前缀和</a> <a href="/tags/%E5%8F%8C%E6%8C%87%E9%92%88/" style="font-size: 14px; color: #999">双指针</a> <a href="/tags/%E5%9B%BE%E8%AE%BA/" style="font-size: 14px; color: #999">图论</a> <a href="/tags/%E5%AE%B9%E5%99%A8/" style="font-size: 14px; color: #999">容器</a> <a href="/tags/%E5%B7%AE%E5%88%86/" style="font-size: 14px; color: #999">差分</a> <a href="/tags/%E6%89%8B%E5%86%99%E5%A0%86/" style="font-size: 14px; color: #999">手写堆</a> <a href="/tags/%E6%89%93%E5%8C%85%E4%BE%9D%E8%B5%96/" style="font-size: 14px; color: #999">打包依赖</a> <a href="/tags/%E6%95%B0%E7%BB%84%E5%8D%95%E9%93%BE%E8%A1%A8/" style="font-size: 14px; color: #999">数组单链表</a> <a href="/tags/%E6%95%B0%E8%AE%BA/" style="font-size: 14px; color: #999">数论</a> <a href="/tags/%E6%9A%B4%E5%8A%9B/" style="font-size: 24px; color: #555">暴力</a> <a href="/tags/%E6%A0%87%E7%AD%BE%E5%90%8D/" style="font-size: 14px; color: #999">标签名</a> <a href="/tags/%E6%A8%A1%E6%8B%9F/" style="font-size: 24px; color: #555">模拟</a> <a href="/tags/%E6%B5%8F%E8%A7%88%E5%99%A8%E6%8F%92%E4%BB%B6/" style="font-size: 14px; color: #999">浏览器插件</a> <a href="/tags/%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3/" style="font-size: 14px; color: #999">滑动窗口</a> <a href="/tags/%E7%A3%81%E7%9B%98%E5%88%86%E5%8C%BA/" style="font-size: 14px; color: #999">磁盘分区</a> <a href="/tags/%E7%A6%BB%E6%95%A3%E5%8C%96/" style="font-size: 14px; color: #999">离散化</a> <a href="/tags/%E7%A7%91%E5%A4%A7%E6%9C%AA%E6%9D%A5/" style="font-size: 24px; color: #555">科大未来</a> <a href="/tags/%E8%AE%BA%E6%96%87/" style="font-size: 14px; color: #999">论文</a> <a href="/tags/%E8%B4%AA%E5%BF%83/" style="font-size: 14px; color: #999">贪心</a> <a href="/tags/%E8%BF%9C%E7%A8%8B%E5%BC%80%E5%8F%91/" style="font-size: 14px; color: #999">远程开发</a> <a href="/tags/%E8%BF%9E%E9%80%9A%E5%9D%97/" style="font-size: 14px; color: #999">连通块</a> <a href="/tags/%E9%9D%99%E6%80%81ip/" style="font-size: 14px; color: #999">静态ip</a>
     </div>
   </section>
 
