@@ -1625,7 +1625,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: "env",
     cdn: {"js":{"app":"/js/app.js","parallax":"/js/plugins/parallax.js","rightMenu":"/js/plugins/rightMenu.js","rightMenus":"/js/plugins/rightMenus.js","sites":"/js/plugins/tags/sites.js","friends":"/js/plugins/tags/friends.js","contributors":"/js/plugins/tags/contributors.js","search":"/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1690101680916),
+    lastupdate: new Date(1690853500232),
     sidebar: {
       for_page: ["blogger","category","tagcloud","donate","text"],
       for_post: ["toc"],
@@ -2405,6 +2405,273 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           <div class='post-wrapper'>
             <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
+  <link itemprop="mainEntityOfPage" href="http://breadwinners.top/2023/07/20/pytorch/potorch处理多维特征输入/">
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="怒涛卷霜雪  天堑无涯">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
+    <meta itemprop="name" content="怒涛卷霜雪  天堑无涯">
+    <meta itemprop="description" content="test description">
+  </span>
+  
+  
+  
+    <span hidden>
+      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+    </span>
+  
+  
+    
+    <h2 class="article-title"  itemprop="name headline">
+      <a href="/2023/07/20/pytorch/potorch%E5%A4%84%E7%90%86%E5%A4%9A%E7%BB%B4%E7%89%B9%E5%BE%81%E8%BE%93%E5%85%A5/"  itemprop="url">
+        pytorch处理多维特征
+      </a>
+    </h2>
+  
+  <div class='md article-desc' itemprop="articleBody">
+    
+      
+        
+说明：1、乘的权重(w)都一样，加的偏置(b)也一样。b变成矩阵时使用广播机制。神经网络的参数w和b是网络需要学习的，其他是已知的。
+2、学习能力越强，有可能会把输入样本中噪声的规律也学到。我们要学习数据本身真实数据的规律，学习能力要有泛化能力。
+3、该神经网络共3层；第一层是8维到6维的非线性空间变换，第二层是6维到4维的非线性空间变换，第三层是4维到1维的非线性空间变换。
+4、本算法中...
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+        <time itemprop="dateCreated datePublished" datetime="2023-07-20T00:00:00+08:00">2023-07-20</time>
+        
+          <span class="dot"></span>
+          <a class="category-link" href="/categories/pytorch/">pytorch</a>
+          
+            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+              <a href="/categories/pytorch/" itemprop="url"><span itemprop="name">pytorch</span></a>
+            </span>
+          
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/2023/07/20/pytorch/potorch%E5%A4%84%E7%90%86%E5%A4%9A%E7%BB%B4%E7%89%B9%E5%BE%81%E8%BE%93%E5%85%A5/' itemprop="url">
+            阅读全文
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
+  <link itemprop="mainEntityOfPage" href="http://breadwinners.top/2023/07/20/pytorch/pytorch多分类问题/">
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="怒涛卷霜雪  天堑无涯">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
+    <meta itemprop="name" content="怒涛卷霜雪  天堑无涯">
+    <meta itemprop="description" content="test description">
+  </span>
+  
+  
+  
+    <span hidden>
+      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+    </span>
+  
+  
+    
+    <h2 class="article-title"  itemprop="name headline">
+      <a href="/2023/07/20/pytorch/pytorch%E5%A4%9A%E5%88%86%E7%B1%BB%E9%97%AE%E9%A2%98/"  itemprop="url">
+        pytorch多分类问题
+      </a>
+    </h2>
+  
+  <div class='md article-desc' itemprop="articleBody">
+    
+      
+        
+
+说明： 1、softmax的输入不需要再做非线性变换，也就是说softmax之前不再需要激活函数(relu)。softmax两个作用，如果在进行softmax前的input有负数，通过指数变换，得到正数。所有类的概率求和为1。
+​      2、y的标签编码方式是one-hot。我对one-hot的理解是只有一位是1，其他位为0。(但是标签的one-hot编码是算法完成的，算法的输入仍为...
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+        <time itemprop="dateCreated datePublished" datetime="2023-07-20T00:00:00+08:00">2023-07-20</time>
+        
+          <span class="dot"></span>
+          <a class="category-link" href="/categories/pytorch/">pytorch</a>
+          
+            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+              <a href="/categories/pytorch/" itemprop="url"><span itemprop="name">pytorch</span></a>
+            </span>
+          
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/2023/07/20/pytorch/pytorch%E5%A4%9A%E5%88%86%E7%B1%BB%E9%97%AE%E9%A2%98/' itemprop="url">
+            阅读全文
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
+  <link itemprop="mainEntityOfPage" href="http://breadwinners.top/2023/07/20/pytorch/pytorch实现线性回归/">
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="怒涛卷霜雪  天堑无涯">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
+    <meta itemprop="name" content="怒涛卷霜雪  天堑无涯">
+    <meta itemprop="description" content="test description">
+  </span>
+  
+  
+  
+    <span hidden>
+      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+    </span>
+  
+  
+    
+    <h2 class="article-title"  itemprop="name headline">
+      <a href="/2023/07/20/pytorch/pytorch%E5%AE%9E%E7%8E%B0%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92/"  itemprop="url">
+        pytorch实现线性回归
+      </a>
+    </h2>
+  
+  <div class='md article-desc' itemprop="articleBody">
+    
+      
+        pytorch构建风格：
+代码说明：
+1、Module实现了魔法函数__call__()，call()里面有一条语句是要调用forward()。因此新写的类中需要重写forward()覆盖掉父类中的forward()
+2、call函数的另一个作用是可以直接在对象后面加()，例如实例化的model对象，和实例化的linear对象
+3、本算法的forward体现是通过以下语句实现的：
+1y_pr...
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+        <time itemprop="dateCreated datePublished" datetime="2023-07-20T00:00:00+08:00">2023-07-20</time>
+        
+          <span class="dot"></span>
+          <a class="category-link" href="/categories/pytorch/">pytorch</a>
+          
+            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+              <a href="/categories/pytorch/" itemprop="url"><span itemprop="name">pytorch</span></a>
+            </span>
+          
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/2023/07/20/pytorch/pytorch%E5%AE%9E%E7%8E%B0%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92/' itemprop="url">
+            阅读全文
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
+  <link itemprop="mainEntityOfPage" href="http://breadwinners.top/2023/07/20/pytorch/pytorch反向传播/">
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="怒涛卷霜雪  天堑无涯">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
+    <meta itemprop="name" content="怒涛卷霜雪  天堑无涯">
+    <meta itemprop="description" content="test description">
+  </span>
+  
+  
+  
+    <span hidden>
+      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+    </span>
+  
+  
+    
+    <h2 class="article-title"  itemprop="name headline">
+      <a href="/2023/07/20/pytorch/pytorch%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD/"  itemprop="url">
+        pytorch反向传播
+      </a>
+    </h2>
+  
+  <div class='md article-desc' itemprop="articleBody">
+    
+      
+        
+只更新值而不构建计算图，使用w.data，取值用w.item()
+1、w是Tensor(张量类型)，Tensor中包含data和grad，data和grad也是Tensor。grad初始为None，调用l.backward()方法后w.grad为Tensor，故更新w.data时需使用w.grad.data。如果w需要计算梯度，那构建的计算图中，跟w相关的tensor都默认需要计算梯度。
+...
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+        <time itemprop="dateCreated datePublished" datetime="2023-07-20T00:00:00+08:00">2023-07-20</time>
+        
+          <span class="dot"></span>
+          <a class="category-link" href="/categories/pytorch/">pytorch</a>
+          
+            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+              <a href="/categories/pytorch/" itemprop="url"><span itemprop="name">pytorch</span></a>
+            </span>
+          
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/2023/07/20/pytorch/pytorch%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD/' itemprop="url">
+            阅读全文
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
   <link itemprop="mainEntityOfPage" href="http://breadwinners.top/2023/07/20/pytorch/加载数据集/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="怒涛卷霜雪  天堑无涯">
@@ -2818,289 +3085,6 @@ shape的输入参数可以是一个整数（表示维度），也可以是一个
           </div>
         
       
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://breadwinners.top/2023/06/06/小技巧/frp开机自启动/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="怒涛卷霜雪  天堑无涯">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="怒涛卷霜雪  天堑无涯">
-    <meta itemprop="description" content="test description">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2023/06/06/%E5%B0%8F%E6%8A%80%E5%B7%A7/frp%E5%BC%80%E6%9C%BA%E8%87%AA%E5%90%AF%E5%8A%A8/"  itemprop="url">
-        frp开机自启动
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        在Windows任务计划程序进行设置
-打开任务计划程序
-
-打开开始菜单，输入 “任务计划程序” 将会自动搜索，接着打开它。
-
-
-创建计划任务
-
-2.1 点击右侧的 “创建任务”，名称随意填写，安全选项选择 “不管用户是否登录都要运行”，当然你也可以选择 “只在用户登录时运行”。
-
-2.2【常规】选项卡设置
-
-
-选择 “不管用户是否登录都要运行” 可以让你的电脑在断电自动启动后自动运行 frp...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2023-06-06T00:00:00+08:00">2023-06-06</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E5%B0%8F%E6%8A%80%E5%B7%A7/">小技巧</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E5%B0%8F%E6%8A%80%E5%B7%A7/" itemprop="url"><span itemprop="name">小技巧</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2023/06/06/%E5%B0%8F%E6%8A%80%E5%B7%A7/frp%E5%BC%80%E6%9C%BA%E8%87%AA%E5%90%AF%E5%8A%A8/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://breadwinners.top/2023/06/01/maven带依赖打包/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="怒涛卷霜雪  天堑无涯">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="怒涛卷霜雪  天堑无涯">
-    <meta itemprop="description" content="test description">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2023/06/01/maven%E5%B8%A6%E4%BE%9D%E8%B5%96%E6%89%93%E5%8C%85/"  itemprop="url">
-        maven带依赖打包
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        当你需要在某个环境下使用 java -jar xxx.jar的命令运行jar包程序，而且该jar包又需要引用其他程序依赖的时候，就可以采用以下的方法。
-
-添加依赖
-12345678910111213141516171819&lt;build&gt;    &lt;plugins&gt;        &lt;plugin&gt;            &lt;groupId&gt;org.a...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2023-06-01T00:00:00+08:00">2023-06-01</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E5%B0%8F%E6%8A%80%E5%B7%A7/">小技巧</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E5%B0%8F%E6%8A%80%E5%B7%A7/" itemprop="url"><span itemprop="name">小技巧</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2023/06/01/maven%E5%B8%A6%E4%BE%9D%E8%B5%96%E6%89%93%E5%8C%85/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://breadwinners.top/2023/05/28/WSL2/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="怒涛卷霜雪  天堑无涯">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="怒涛卷霜雪  天堑无涯">
-    <meta itemprop="description" content="test description">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2023/05/28/WSL2/"  itemprop="url">
-        windows安装WSL
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        Windows下安装wsl
-开启系统的一下设置
-虚拟化设置
-
-
-
-系统设置
-
-
-
-​	控制面板-&gt;程序-&gt;启用或关闭 windows 功能，开启 Windows 虚拟化和 Linux 子系统（WSL2)以及Hyper-V
-​	勾选完成后，Windows11 会自己下载些东西，并提示你重启。等电脑彻底重启完以后，进行后续操作
-
-
-打开Power Shell 以管理员身份输入下方代码...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2023-05-28T00:00:00+08:00">2023-05-28</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/Linux/">Linux</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/Linux/" itemprop="url"><span itemprop="name">Linux</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2023/05/28/WSL2/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://breadwinners.top/2023/05/26/flume 运行时报NoSuchMethodError/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="怒涛卷霜雪  天堑无涯">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="怒涛卷霜雪  天堑无涯">
-    <meta itemprop="description" content="test description">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2023/05/26/flume%20%E8%BF%90%E8%A1%8C%E6%97%B6%E6%8A%A5NoSuchMethodError/"  itemprop="url">
-        flume 运行时报NoSuchMethodError com.google.common.base.Preconditions.checkArgument
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        1、遇到问题今天在配置好flume，在运行flume时报了以下错误。
-12023-05-26 16:39:56,359 (SinkRunner-PollingRunner-DefaultSinkProcessor) [ERROR - org.apache.flume.sink.hdfs.HDFSEventSink.process(HDFSEventSink.java:459)] proces...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2023-05-26T00:00:00+08:00">2023-05-26</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/">大数据</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/" itemprop="url"><span itemprop="name">大数据</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2023/05/26/flume%20%E8%BF%90%E8%A1%8C%E6%97%B6%E6%8A%A5NoSuchMethodError/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
     
   </section>
   
@@ -3240,7 +3224,7 @@ shape的输入参数可以是一个整数（表示维度），也可以是一个
           <li><a class="flat-box"
             title="/categories/pytorch/" href="/categories/pytorch/"
             active-action="action-categoriespytorch"
-            ><div class='name'>pytorch</div><div class='badge'>(9)</div></a></li>
+            ><div class='name'>pytorch</div><div class='badge'>(13)</div></a></li>
         
           <li><a class="flat-box"
             title="/categories/use/" href="/categories/use/"
@@ -3310,7 +3294,7 @@ shape的输入参数可以是一个整数（表示维度），也可以是一个
 
 
     <div class='content'>
-      <a href="/tags/bashrc/" style="font-size: 14px; color: #999">.bashrc</a> <a href="/tags/DP/" style="font-size: 14px; color: #999">DP</a> <a href="/tags/DataLoader/" style="font-size: 14px; color: #999">DataLoader</a> <a href="/tags/HashMap/" style="font-size: 14px; color: #999">HashMap</a> <a href="/tags/Linear/" style="font-size: 14px; color: #999">Linear</a> <a href="/tags/Nvidia/" style="font-size: 14px; color: #999">Nvidia</a> <a href="/tags/STL/" style="font-size: 14px; color: #999">STL</a> <a href="/tags/Trie/" style="font-size: 14px; color: #999">Trie</a> <a href="/tags/axis/" style="font-size: 14px; color: #999">axis</a> <a href="/tags/bash-4-2/" style="font-size: 14px; color: #999">bash-4.2$</a> <a href="/tags/bfs/" style="font-size: 14px; color: #999">bfs</a> <a href="/tags/bin%E7%9B%AE%E5%BD%95/" style="font-size: 14px; color: #999">bin目录</a> <a href="/tags/bugs/" style="font-size: 14px; color: #999">bugs</a> <a href="/tags/centos/" style="font-size: 14px; color: #999">centos</a> <a href="/tags/cin/" style="font-size: 14px; color: #999">cin</a> <a href="/tags/cnn/" style="font-size: 14px; color: #999">cnn</a> <a href="/tags/cout/" style="font-size: 14px; color: #999">cout</a> <a href="/tags/cuda/" style="font-size: 14px; color: #999">cuda</a> <a href="/tags/cuda12-2/" style="font-size: 14px; color: #999">cuda12.2</a> <a href="/tags/datasets/" style="font-size: 14px; color: #999">datasets</a> <a href="/tags/dfs/" style="font-size: 14px; color: #999">dfs</a> <a href="/tags/flume/" style="font-size: 14px; color: #999">flume</a> <a href="/tags/frp/" style="font-size: 24px; color: #555">frp</a> <a href="/tags/gcc/" style="font-size: 14px; color: #999">gcc</a> <a href="/tags/gdb/" style="font-size: 14px; color: #999">gdb</a> <a href="/tags/graph/" style="font-size: 14px; color: #999">graph</a> <a href="/tags/greedy/" style="font-size: 14px; color: #999">greedy</a> <a href="/tags/heap/" style="font-size: 14px; color: #999">heap</a> <a href="/tags/kmp/" style="font-size: 14px; color: #999">kmp</a> <a href="/tags/lsbsk/" style="font-size: 14px; color: #999">lsbsk</a> <a href="/tags/maven/" style="font-size: 14px; color: #999">maven</a> <a href="/tags/mysql/" style="font-size: 14px; color: #999">mysql</a> <a href="/tags/nginx/" style="font-size: 14px; color: #999">nginx</a> <a href="/tags/ontHot/" style="font-size: 14px; color: #999">ontHot</a> <a href="/tags/picgo/" style="font-size: 14px; color: #999">picgo</a> <a href="/tags/quick/" style="font-size: 14px; color: #999">quick</a> <a href="/tags/redis/" style="font-size: 14px; color: #999">redis</a> <a href="/tags/sbt/" style="font-size: 14px; color: #999">sbt</a> <a href="/tags/shape/" style="font-size: 14px; color: #999">shape()</a> <a href="/tags/softmax/" style="font-size: 14px; color: #999">softmax</a> <a href="/tags/sort/" style="font-size: 24px; color: #555">sort</a> <a href="/tags/spark/" style="font-size: 24px; color: #555">spark</a> <a href="/tags/su/" style="font-size: 14px; color: #999">su</a> <a href="/tags/sudo/" style="font-size: 14px; color: #999">sudo</a> <a href="/tags/test/" style="font-size: 14px; color: #999">test</a> <a href="/tags/titanic/" style="font-size: 24px; color: #555">titanic</a> <a href="/tags/wsl/" style="font-size: 14px; color: #999">wsl</a> <a href="/tags/wsl2/" style="font-size: 14px; color: #999">wsl2</a> <a href="/tags/%E4%B8%8D%E8%83%BD%E5%87%91%E5%87%BA%E7%9A%84%E6%9C%80%E5%A4%A7%E6%95%B4%E6%95%B0/" style="font-size: 14px; color: #999">不能凑出的最大整数</a> <a href="/tags/%E4%BA%8C%E5%88%86/" style="font-size: 14px; color: #999">二分</a> <a href="/tags/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/" style="font-size: 14px; color: #999">内网穿透</a> <a href="/tags/%E5%89%8D%E7%BC%80%E5%92%8C/" style="font-size: 14px; color: #999">前缀和</a> <a href="/tags/%E5%8F%8C%E6%8C%87%E9%92%88/" style="font-size: 14px; color: #999">双指针</a> <a href="/tags/%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD/" style="font-size: 14px; color: #999">反向传播</a> <a href="/tags/%E5%9B%BE%E8%AE%BA/" style="font-size: 14px; color: #999">图论</a> <a href="/tags/%E5%A4%9A%E5%88%86%E7%B1%BB/" style="font-size: 14px; color: #999">多分类</a> <a href="/tags/%E5%A4%9A%E7%BB%B4%E5%BA%A6%E7%89%B9%E5%BE%81/" style="font-size: 14px; color: #999">多维度特征</a> <a href="/tags/%E5%AE%B9%E5%99%A8/" style="font-size: 14px; color: #999">容器</a> <a href="/tags/%E5%B7%AE%E5%88%86/" style="font-size: 14px; color: #999">差分</a> <a href="/tags/%E6%89%8B%E5%86%99%E5%A0%86/" style="font-size: 14px; color: #999">手写堆</a> <a href="/tags/%E6%89%93%E5%8C%85%E4%BE%9D%E8%B5%96/" style="font-size: 14px; color: #999">打包依赖</a> <a href="/tags/%E6%95%B0%E7%BB%84%E5%8D%95%E9%93%BE%E8%A1%A8/" style="font-size: 14px; color: #999">数组单链表</a> <a href="/tags/%E6%95%B0%E8%AE%BA/" style="font-size: 14px; color: #999">数论</a> <a href="/tags/%E6%9A%B4%E5%8A%9B/" style="font-size: 24px; color: #555">暴力</a> <a href="/tags/%E6%A0%87%E7%AD%BE%E5%90%8D/" style="font-size: 14px; color: #999">标签名</a> <a href="/tags/%E6%A2%AF%E5%BA%A6%E4%B8%8B%E9%99%8D/" style="font-size: 14px; color: #999">梯度下降</a> <a href="/tags/%E6%A8%A1%E6%8B%9F/" style="font-size: 24px; color: #555">模拟</a> <a href="/tags/%E6%B5%8F%E8%A7%88%E5%99%A8%E6%8F%92%E4%BB%B6/" style="font-size: 14px; color: #999">浏览器插件</a> <a href="/tags/%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3/" style="font-size: 14px; color: #999">滑动窗口</a> <a href="/tags/%E7%A3%81%E7%9B%98%E5%88%86%E5%8C%BA/" style="font-size: 14px; color: #999">磁盘分区</a> <a href="/tags/%E7%A6%BB%E6%95%A3%E5%8C%96/" style="font-size: 14px; color: #999">离散化</a> <a href="/tags/%E7%A7%91%E5%A4%A7%E6%9C%AA%E6%9D%A5/" style="font-size: 24px; color: #555">科大未来</a> <a href="/tags/%E8%AE%BA%E6%96%87/" style="font-size: 14px; color: #999">论文</a> <a href="/tags/%E8%B4%AA%E5%BF%83/" style="font-size: 14px; color: #999">贪心</a> <a href="/tags/%E8%BF%9C%E7%A8%8B%E5%BC%80%E5%8F%91/" style="font-size: 14px; color: #999">远程开发</a> <a href="/tags/%E8%BF%9E%E9%80%9A%E5%9D%97/" style="font-size: 14px; color: #999">连通块</a> <a href="/tags/%E9%9A%8F%E6%9C%BA%E6%A2%AF%E5%BA%A6%E4%B8%8B%E9%99%8D/" style="font-size: 14px; color: #999">随机梯度下降</a> <a href="/tags/%E9%9D%99%E6%80%81ip/" style="font-size: 14px; color: #999">静态ip</a>
+      <a href="/tags/bashrc/" style="font-size: 14px; color: #999">.bashrc</a> <a href="/tags/DP/" style="font-size: 14px; color: #999">DP</a> <a href="/tags/DataLoader/" style="font-size: 14px; color: #999">DataLoader</a> <a href="/tags/GoogleNet/" style="font-size: 14px; color: #999">GoogleNet</a> <a href="/tags/HashMap/" style="font-size: 14px; color: #999">HashMap</a> <a href="/tags/Inception-Module/" style="font-size: 14px; color: #999">Inception Module</a> <a href="/tags/Linear/" style="font-size: 14px; color: #999">Linear</a> <a href="/tags/Nvidia/" style="font-size: 14px; color: #999">Nvidia</a> <a href="/tags/Residual-Network/" style="font-size: 14px; color: #999">Residual Network</a> <a href="/tags/STL/" style="font-size: 14px; color: #999">STL</a> <a href="/tags/Trie/" style="font-size: 14px; color: #999">Trie</a> <a href="/tags/axis/" style="font-size: 14px; color: #999">axis</a> <a href="/tags/bash-4-2/" style="font-size: 14px; color: #999">bash-4.2$</a> <a href="/tags/bfs/" style="font-size: 14px; color: #999">bfs</a> <a href="/tags/bin%E7%9B%AE%E5%BD%95/" style="font-size: 14px; color: #999">bin目录</a> <a href="/tags/bugs/" style="font-size: 14px; color: #999">bugs</a> <a href="/tags/centos/" style="font-size: 14px; color: #999">centos</a> <a href="/tags/cin/" style="font-size: 14px; color: #999">cin</a> <a href="/tags/cnn/" style="font-size: 24px; color: #555">cnn</a> <a href="/tags/cout/" style="font-size: 14px; color: #999">cout</a> <a href="/tags/cuda/" style="font-size: 14px; color: #999">cuda</a> <a href="/tags/cuda12-2/" style="font-size: 14px; color: #999">cuda12.2</a> <a href="/tags/datasets/" style="font-size: 14px; color: #999">datasets</a> <a href="/tags/dfs/" style="font-size: 14px; color: #999">dfs</a> <a href="/tags/flume/" style="font-size: 14px; color: #999">flume</a> <a href="/tags/frp/" style="font-size: 24px; color: #555">frp</a> <a href="/tags/gcc/" style="font-size: 14px; color: #999">gcc</a> <a href="/tags/gdb/" style="font-size: 14px; color: #999">gdb</a> <a href="/tags/graph/" style="font-size: 14px; color: #999">graph</a> <a href="/tags/greedy/" style="font-size: 14px; color: #999">greedy</a> <a href="/tags/heap/" style="font-size: 14px; color: #999">heap</a> <a href="/tags/hidden/" style="font-size: 14px; color: #999">hidden</a> <a href="/tags/kmp/" style="font-size: 14px; color: #999">kmp</a> <a href="/tags/lsbsk/" style="font-size: 14px; color: #999">lsbsk</a> <a href="/tags/maven/" style="font-size: 14px; color: #999">maven</a> <a href="/tags/mysql/" style="font-size: 14px; color: #999">mysql</a> <a href="/tags/nginx/" style="font-size: 14px; color: #999">nginx</a> <a href="/tags/ontHot/" style="font-size: 14px; color: #999">ontHot</a> <a href="/tags/picgo/" style="font-size: 14px; color: #999">picgo</a> <a href="/tags/quick/" style="font-size: 14px; color: #999">quick</a> <a href="/tags/redis/" style="font-size: 14px; color: #999">redis</a> <a href="/tags/rnn/" style="font-size: 14px; color: #999">rnn</a> <a href="/tags/sbt/" style="font-size: 14px; color: #999">sbt</a> <a href="/tags/shape/" style="font-size: 14px; color: #999">shape()</a> <a href="/tags/softmax/" style="font-size: 14px; color: #999">softmax</a> <a href="/tags/sort/" style="font-size: 24px; color: #555">sort</a> <a href="/tags/spark/" style="font-size: 24px; color: #555">spark</a> <a href="/tags/su/" style="font-size: 14px; color: #999">su</a> <a href="/tags/sudo/" style="font-size: 14px; color: #999">sudo</a> <a href="/tags/test/" style="font-size: 14px; color: #999">test</a> <a href="/tags/titanic/" style="font-size: 24px; color: #555">titanic</a> <a href="/tags/wsl/" style="font-size: 14px; color: #999">wsl</a> <a href="/tags/wsl2/" style="font-size: 14px; color: #999">wsl2</a> <a href="/tags/%E4%B8%8D%E8%83%BD%E5%87%91%E5%87%BA%E7%9A%84%E6%9C%80%E5%A4%A7%E6%95%B4%E6%95%B0/" style="font-size: 14px; color: #999">不能凑出的最大整数</a> <a href="/tags/%E4%BA%8C%E5%88%86/" style="font-size: 14px; color: #999">二分</a> <a href="/tags/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/" style="font-size: 14px; color: #999">内网穿透</a> <a href="/tags/%E5%86%B3%E7%AD%96%E6%A0%91/" style="font-size: 14px; color: #999">决策树</a> <a href="/tags/%E5%89%8D%E7%BC%80%E5%92%8C/" style="font-size: 14px; color: #999">前缀和</a> <a href="/tags/%E5%8F%8C%E6%8C%87%E9%92%88/" style="font-size: 14px; color: #999">双指针</a> <a href="/tags/%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD/" style="font-size: 14px; color: #999">反向传播</a> <a href="/tags/%E5%9B%BE%E8%AE%BA/" style="font-size: 14px; color: #999">图论</a> <a href="/tags/%E5%A4%9A%E5%88%86%E7%B1%BB/" style="font-size: 14px; color: #999">多分类</a> <a href="/tags/%E5%A4%9A%E7%BB%B4%E5%BA%A6%E7%89%B9%E5%BE%81/" style="font-size: 14px; color: #999">多维度特征</a> <a href="/tags/%E5%AE%B9%E5%99%A8/" style="font-size: 14px; color: #999">容器</a> <a href="/tags/%E5%B7%AE%E5%88%86/" style="font-size: 14px; color: #999">差分</a> <a href="/tags/%E6%89%8B%E5%86%99%E5%A0%86/" style="font-size: 14px; color: #999">手写堆</a> <a href="/tags/%E6%89%93%E5%8C%85%E4%BE%9D%E8%B5%96/" style="font-size: 14px; color: #999">打包依赖</a> <a href="/tags/%E6%95%B0%E7%BB%84%E5%8D%95%E9%93%BE%E8%A1%A8/" style="font-size: 14px; color: #999">数组单链表</a> <a href="/tags/%E6%95%B0%E8%AE%BA/" style="font-size: 14px; color: #999">数论</a> <a href="/tags/%E6%9A%B4%E5%8A%9B/" style="font-size: 24px; color: #555">暴力</a> <a href="/tags/%E6%A0%87%E7%AD%BE%E5%90%8D/" style="font-size: 14px; color: #999">标签名</a> <a href="/tags/%E6%A2%AF%E5%BA%A6%E4%B8%8B%E9%99%8D/" style="font-size: 14px; color: #999">梯度下降</a> <a href="/tags/%E6%A2%AF%E5%BA%A6%E6%B6%88%E5%A4%B1/" style="font-size: 14px; color: #999">梯度消失</a> <a href="/tags/%E6%A8%A1%E6%8B%9F/" style="font-size: 24px; color: #555">模拟</a> <a href="/tags/%E6%B5%8F%E8%A7%88%E5%99%A8%E6%8F%92%E4%BB%B6/" style="font-size: 14px; color: #999">浏览器插件</a> <a href="/tags/%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3/" style="font-size: 14px; color: #999">滑动窗口</a> <a href="/tags/%E7%A3%81%E7%9B%98%E5%88%86%E5%8C%BA/" style="font-size: 14px; color: #999">磁盘分区</a> <a href="/tags/%E7%A6%BB%E6%95%A3%E5%8C%96/" style="font-size: 14px; color: #999">离散化</a> <a href="/tags/%E7%A7%91%E5%A4%A7%E6%9C%AA%E6%9D%A5/" style="font-size: 24px; color: #555">科大未来</a> <a href="/tags/%E8%AE%BA%E6%96%87/" style="font-size: 14px; color: #999">论文</a> <a href="/tags/%E8%B4%AA%E5%BF%83/" style="font-size: 14px; color: #999">贪心</a> <a href="/tags/%E8%BF%9C%E7%A8%8B%E5%BC%80%E5%8F%91/" style="font-size: 14px; color: #999">远程开发</a> <a href="/tags/%E8%BF%9E%E9%80%9A%E5%9D%97/" style="font-size: 14px; color: #999">连通块</a> <a href="/tags/%E9%9A%8F%E6%9C%BA%E6%A2%AF%E5%BA%A6%E4%B8%8B%E9%99%8D/" style="font-size: 14px; color: #999">随机梯度下降</a> <a href="/tags/%E9%9D%99%E6%80%81ip/" style="font-size: 14px; color: #999">静态ip</a>
     </div>
   </section>
 
