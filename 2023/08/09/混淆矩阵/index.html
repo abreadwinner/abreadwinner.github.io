@@ -44,7 +44,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
 <meta property="article:published_time" content="2023-08-08T16:00:00.000Z">
-<meta property="article:modified_time" content="2023-08-26T07:09:20.661Z">
+<meta property="article:modified_time" content="2023-08-26T12:31:36.990Z">
 <meta property="article:author" content="吴涛">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
@@ -1627,7 +1627,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: "env",
     cdn: {"js":{"app":"/js/app.js","parallax":"/js/plugins/parallax.js","rightMenu":"/js/plugins/rightMenu.js","rightMenus":"/js/plugins/rightMenus.js","sites":"/js/plugins/tags/sites.js","friends":"/js/plugins/tags/friends.js","contributors":"/js/plugins/tags/contributors.js","search":"/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1693034671717),
+    lastupdate: new Date(1693066257736),
     sidebar: {
       for_page: ["blogger","category","tagcloud","donate","text"],
       for_post: ["toc"],
@@ -2470,7 +2470,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <li>真实值是negative，模型认为是negative的数量（True Negative&#x3D;TN）</li>
 </ul>
 <p>将这四个指标一起呈现在表格中，就能得到如下这样一个矩阵，我们称它为混淆矩阵（Confusion Matrix）：</p>
-<p><img src="https://img-blog.csdnimg.cn/20200414153127816.png" class="lazyload" data-srcset="https://img-blog.csdnimg.cn/20200414153127816.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<p><img src="https://tt-1316429231.cos.ap-nanjing.myqcloud.com/imgs/BuGanDong/202308262031164.png" class="lazyload" data-srcset="https://tt-1316429231.cos.ap-nanjing.myqcloud.com/imgs/BuGanDong/202308262031164.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
 <h2 id="混淆矩阵的指标"><a href="#混淆矩阵的指标" class="headerlink" title="混淆矩阵的指标"></a><strong>混淆矩阵的指标</strong></h2><p>预测性分类模型，肯定是希望越准越好。那么，对应到混淆矩阵中，那肯定是希望TP与TN的数量大，而FP与FN的数量小。所以当我们得到了模型的混淆矩阵后，就需要去看有多少观测值在第二、四象限对应的位置，这里的数值越多越好；反之，在第一、三象限对应位置出现的观测值肯定是越少越好。</p>
 <h3 id="二级指标"><a href="#二级指标" class="headerlink" title="二级指标"></a>二级指标</h3><p>但是，混淆矩阵里面统计的是个数，有时候面对大量的数据，光凭算个数，很难衡量模型的优劣。因此混淆矩阵在基本的统计结果上又延伸了如下4个指标，我称他们是二级指标（通过最底层指标加减乘除得到的）：</p>
 <ul>
@@ -2480,21 +2480,21 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <li>特异度（Specificity）</li>
 </ul>
 <p>我用表格的方式将这四种指标的定义、计算、理解进行了汇总：</p>
-<p><img src="https://img-blog.csdn.net/20180531115939413?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L09yYW5nZV9TcG90dHlfQ2F0/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" class="lazyload" data-srcset="https://img-blog.csdn.net/20180531115939413?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L09yYW5nZV9TcG90dHlfQ2F0/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<p><img src="https://tt-1316429231.cos.ap-nanjing.myqcloud.com/imgs/BuGanDong/202308262031205.png" class="lazyload" data-srcset="https://tt-1316429231.cos.ap-nanjing.myqcloud.com/imgs/BuGanDong/202308262031205.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
 <p>通过上面的四个二级指标，可以将混淆矩阵中数量的结果转化为0-1之间的比率。便于进行标准化的衡量。</p>
 <p>在这四个指标的基础上在进行拓展，会产令另外一个三级指标</p>
 <h3 id="三级指标"><a href="#三级指标" class="headerlink" title="三级指标"></a>三级指标</h3><p>这个指标叫做F1 Score。他的计算公式是：</p>
-<p><img src="https://img-blog.csdn.net/20180531141602829?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L09yYW5nZV9TcG90dHlfQ2F0/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" class="lazyload" data-srcset="https://img-blog.csdn.net/20180531141602829?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L09yYW5nZV9TcG90dHlfQ2F0/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<p><img src="https://tt-1316429231.cos.ap-nanjing.myqcloud.com/imgs/BuGanDong/202308262031190.png" class="lazyload" data-srcset="https://tt-1316429231.cos.ap-nanjing.myqcloud.com/imgs/BuGanDong/202308262031190.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
 <p>其中，P代表Precision，R代表Recall。</p>
 <p>F1-Score指标综合了Precision与Recall的产出的结果。F1-Score的取值范围从0到1的，1代表模型的输出最好，0代表模型的输出结果最差。</p>
 <h2 id="混淆矩阵的实例"><a href="#混淆矩阵的实例" class="headerlink" title="混淆矩阵的实例"></a><strong>混淆矩阵的实例</strong></h2><p>当分类问题是二分问题是，混淆矩阵可以用上面的方法计算。当分类的结果多于两种的时候，混淆矩阵同时适用。</p>
 <p>一下面的混淆矩阵为例，我们的模型目的是为了预测样本是什么动物，这是我们的结果：</p>
-<p><img src="https://img-blog.csdn.net/20180531143656472?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L09yYW5nZV9TcG90dHlfQ2F0/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" class="lazyload" data-srcset="https://img-blog.csdn.net/20180531143656472?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L09yYW5nZV9TcG90dHlfQ2F0/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<p><img src="https://tt-1316429231.cos.ap-nanjing.myqcloud.com/imgs/BuGanDong/202308262031285.png" class="lazyload" data-srcset="https://tt-1316429231.cos.ap-nanjing.myqcloud.com/imgs/BuGanDong/202308262031285.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
 <p>通过混淆矩阵，我们可以得到如下结论：</p>
 <p><strong>Accuracy</strong></p>
 <p>在总共66个动物中，我们一共预测对了10 + 15 + 20&#x3D;45个样本，所以准确率（Accuracy）&#x3D;45&#x2F;66 &#x3D; 68.2%。</p>
 <p>以猫为例，我们可以将上面的图合并为二分问题：</p>
-<p><img src="https://img-blog.csdn.net/20180531150151899?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L09yYW5nZV9TcG90dHlfQ2F0/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" class="lazyload" data-srcset="https://img-blog.csdn.net/20180531150151899?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L09yYW5nZV9TcG90dHlfQ2F0/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<p><img src="https://tt-1316429231.cos.ap-nanjing.myqcloud.com/imgs/BuGanDong/202308262031640.png" class="lazyload" data-srcset="https://tt-1316429231.cos.ap-nanjing.myqcloud.com/imgs/BuGanDong/202308262031640.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
 <p><strong>Precision</strong></p>
 <p>所以，以猫为例，模型的结果告诉我们，66只动物里有13只是猫，但是其实这13只猫只有10只预测对了。模型认为是猫的13只动物里，有1条狗，两只猪。所以，Precision（猫）&#x3D; 10&#x2F;13 &#x3D; 76.9%</p>
 <p><strong>Recall</strong></p>
@@ -2531,7 +2531,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2023-08-26T15:09:20+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2023-08-26T20:31:36+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
     <p>更新于：2023年8月26日</p>
@@ -3274,7 +3274,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"怒涛卷霜雪  天堑无涯","url":"http://breadwinners.top/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"吴涛","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://breadwinners.top/","sameAs":["https://github.com/volantis-x"],"description":"test description"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://breadwinners.top/","name":"怒涛卷霜雪  天堑无涯"}},{"@type":"ListItem","position":2,"item":{"@id":"http://breadwinners.top/categories/小土堆pytorch/","name":"小土堆pytorch"}},{"@type":"ListItem","position":3,"item":{"@id":"http://breadwinners.top/2023/08/09/混淆矩阵/","name":"混淆矩阵"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"怒涛卷霜雪  天堑无涯","url":"http://breadwinners.top/","keywords":null,"description":"test description","author":{"@type":"Person","name":"吴涛","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://breadwinners.top/","description":"test description"},"publisher":{"@type":"Organization","name":"怒涛卷霜雪  天堑无涯","url":"http://breadwinners.top/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://breadwinners.top?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"混淆矩阵","description":"test description","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"http://breadwinners.top/2023/08/09/%E6%B7%B7%E6%B7%86%E7%9F%A9%E9%98%B5/"},"author":{"@type":"Person","name":"吴涛","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://breadwinners.top/"},"publisher":{"@type":"Organization","name":"怒涛卷霜雪  天堑无涯","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://breadwinners.top/2023/08/09/%E6%B7%B7%E6%B7%86%E7%9F%A9%E9%98%B5/","wordCount":0,"datePublished":"2023-08-08T16:00:00.000Z","dateModified":"2023-08-26T07:09:20.661Z","articleSection":"小土堆pytorch","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"怒涛卷霜雪  天堑无涯","url":"http://breadwinners.top/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"吴涛","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://breadwinners.top/","sameAs":["https://github.com/volantis-x"],"description":"test description"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://breadwinners.top/","name":"怒涛卷霜雪  天堑无涯"}},{"@type":"ListItem","position":2,"item":{"@id":"http://breadwinners.top/categories/小土堆pytorch/","name":"小土堆pytorch"}},{"@type":"ListItem","position":3,"item":{"@id":"http://breadwinners.top/2023/08/09/混淆矩阵/","name":"混淆矩阵"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"怒涛卷霜雪  天堑无涯","url":"http://breadwinners.top/","keywords":null,"description":"test description","author":{"@type":"Person","name":"吴涛","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://breadwinners.top/","description":"test description"},"publisher":{"@type":"Organization","name":"怒涛卷霜雪  天堑无涯","url":"http://breadwinners.top/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://breadwinners.top?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"混淆矩阵","description":"test description","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"http://breadwinners.top/2023/08/09/%E6%B7%B7%E6%B7%86%E7%9F%A9%E9%98%B5/"},"author":{"@type":"Person","name":"吴涛","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://breadwinners.top/"},"publisher":{"@type":"Organization","name":"怒涛卷霜雪  天堑无涯","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://breadwinners.top/2023/08/09/%E6%B7%B7%E6%B7%86%E7%9F%A9%E9%98%B5/","wordCount":0,"datePublished":"2023-08-08T16:00:00.000Z","dateModified":"2023-08-26T12:31:36.990Z","articleSection":"小土堆pytorch","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
