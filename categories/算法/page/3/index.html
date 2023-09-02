@@ -1625,7 +1625,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: "env",
     cdn: {"js":{"app":"/js/app.js","parallax":"/js/plugins/parallax.js","rightMenu":"/js/plugins/rightMenu.js","rightMenus":"/js/plugins/rightMenus.js","sites":"/js/plugins/tags/sites.js","friends":"/js/plugins/tags/friends.js","contributors":"/js/plugins/tags/contributors.js","search":"/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1693621308842),
+    lastupdate: new Date(1693658696641),
     sidebar: {
       for_page: ["blogger","category","tagcloud","donate","text"],
       for_post: ["toc"],
@@ -2433,20 +2433,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <div class='md article-desc' itemprop="articleBody">
     
       
-        next数组的本质其实是寻找子串中“相同前后缀”的长度，并且一定是最长的前后缀
+        KMP避免暴力算法中O(m·n)指针回退，只向前移动,在匹配失败后，可以根据next数组跳过字串多少个字符进行下一次匹配，next数组是子串的最长公共前后缀在构造next数组时如果遇到下一个字符不同时，要减少一位已经匹配的长度，然后继续匹配，因为我们已经知道了已经匹配过的前面字符串的最长公共前后缀
+next数组next数组的本质其实是寻找子串中“相同前后缀”的长度，并且一定是最长的前后缀
 
-如果下一个字符依然相同的话，直
-接都成了一个更长的前后缀，长度+1,
-
-下一个字符不同的话
-
-
-
-
-
-
-
-
+...
       
     
   </div>
