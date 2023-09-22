@@ -1625,7 +1625,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: "env",
     cdn: {"js":{"app":"/js/app.js","parallax":"/js/plugins/parallax.js","rightMenu":"/js/plugins/rightMenu.js","rightMenus":"/js/plugins/rightMenus.js","sites":"/js/plugins/tags/sites.js","friends":"/js/plugins/tags/friends.js","contributors":"/js/plugins/tags/contributors.js","search":"/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1693658696641),
+    lastupdate: new Date(1695381233176),
     sidebar: {
       for_page: ["blogger","category","tagcloud","donate","text"],
       for_post: ["toc"],
@@ -2582,9 +2582,605 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           
         
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
       
     
     
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
+  <link itemprop="mainEntityOfPage" href="http://breadwinners.top/2023/09/20/Bert/上游任务和下游任务/">
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="怒涛卷霜雪  天堑无涯">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
+    <meta itemprop="name" content="怒涛卷霜雪  天堑无涯">
+    <meta itemprop="description" content="test description">
+  </span>
+  
+  
+  
+    <span hidden>
+      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+    </span>
+  
+  
+    
+    <h2 class="article-title"  itemprop="name headline">
+      <a href="/2023/09/20/Bert/%E4%B8%8A%E6%B8%B8%E4%BB%BB%E5%8A%A1%E5%92%8C%E4%B8%8B%E6%B8%B8%E4%BB%BB%E5%8A%A1/"  itemprop="url">
+        Bert模型的上游任务和下游任务
+      </a>
+    </h2>
+  
+  <div class='md article-desc' itemprop="articleBody">
+    
+      
+        BERT模型是一种基于自注意力机制的深度神经网络，它可以在大规模的文本语料上进行预训练，然后在不同的自然语言处理任务上进行微调，以提高模型的性能和泛化能力。BERT模型中的上游任务和下游任务分别是：
+
+上游任务是指BERT模型在预训练阶段所进行的两个任务，即遮盖语言模型（Masked Language Model，MLM）和下一句预测（Next Sentence Prediction，NSP...
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+        <time itemprop="dateCreated datePublished" datetime="2023-09-20T00:00:00+08:00">2023-09-20</time>
+        
+          <span class="dot"></span>
+          <a class="category-link" href="/categories/bert/">bert</a>
+          
+            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+              <a href="/categories/bert/" itemprop="url"><span itemprop="name">bert</span></a>
+            </span>
+          
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/2023/09/20/Bert/%E4%B8%8A%E6%B8%B8%E4%BB%BB%E5%8A%A1%E5%92%8C%E4%B8%8B%E6%B8%B8%E4%BB%BB%E5%8A%A1/' itemprop="url">
+            阅读全文
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
+  <link itemprop="mainEntityOfPage" href="http://breadwinners.top/2023/09/18/Bert/bert初识/">
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="怒涛卷霜雪  天堑无涯">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
+    <meta itemprop="name" content="怒涛卷霜雪  天堑无涯">
+    <meta itemprop="description" content="test description">
+  </span>
+  
+  
+  
+    <span hidden>
+      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+    </span>
+  
+  
+    
+    <h2 class="article-title"  itemprop="name headline">
+      <a href="/2023/09/18/Bert/bert%E5%88%9D%E8%AF%86/"  itemprop="url">
+        bert初识
+      </a>
+    </h2>
+  
+  <div class='md article-desc' itemprop="articleBody">
+    
+      
+        bert的基础架构
+Encoder部分的架构：
+由多个Encoder堆叠形成：
+
+input由三个部分组成：
+
+关注正常词汇和特殊词汇的作用
+
+TokenEmbedding对所有的词进行Embedding
+SegmentEmbedding由于我们处理的是两个句子，需要对两个句子进行区分
+PositionEmbeddings随机初始化，让模型自己学出来Embedding，区别于transfor...
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+        <time itemprop="dateCreated datePublished" datetime="2023-09-18T00:00:00+08:00">2023-09-18</time>
+        
+          <span class="dot"></span>
+          <a class="category-link" href="/categories/bertzh/">bertzh</a>
+          
+            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+              <a href="/categories/bertzh/" itemprop="url"><span itemprop="name">bertzh</span></a>
+            </span>
+          
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/2023/09/18/Bert/bert%E5%88%9D%E8%AF%86/' itemprop="url">
+            阅读全文
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
+  <link itemprop="mainEntityOfPage" href="http://breadwinners.top/2023/09/16/pytorch/seq2seq李沐/">
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="怒涛卷霜雪  天堑无涯">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
+    <meta itemprop="name" content="怒涛卷霜雪  天堑无涯">
+    <meta itemprop="description" content="test description">
+  </span>
+  
+  
+  
+    <span hidden>
+      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+    </span>
+  
+  
+    
+    <h2 class="article-title"  itemprop="name headline">
+      <a href="/2023/09/16/pytorch/seq2seq%E6%9D%8E%E6%B2%90/"  itemprop="url">
+        2023年9月16日
+      </a>
+    </h2>
+  
+  <div class='md article-desc' itemprop="articleBody">
+    
+      
+        
+
+
+
+
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+        <time itemprop="dateCreated datePublished" datetime="2023-09-16T15:02:37+08:00">2023-09-16</time>
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/2023/09/16/pytorch/seq2seq%E6%9D%8E%E6%B2%90/' itemprop="url">
+            阅读全文
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
+  <link itemprop="mainEntityOfPage" href="http://breadwinners.top/2023/09/16/pytorch/GRU中droupout/">
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="怒涛卷霜雪  天堑无涯">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
+    <meta itemprop="name" content="怒涛卷霜雪  天堑无涯">
+    <meta itemprop="description" content="test description">
+  </span>
+  
+  
+  
+    <span hidden>
+      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+    </span>
+  
+  
+    
+    <h2 class="article-title"  itemprop="name headline">
+      <a href="/2023/09/16/pytorch/GRU%E4%B8%ADdroupout/"  itemprop="url">
+        GRU中dropout
+      </a>
+    </h2>
+  
+  <div class='md article-desc' itemprop="articleBody">
+    
+      
+        GRU是一种循环神经网络（RNN）的变体，它可以有效地处理序列数据，如文本、语音、视频等。GRU的特点是使用了门控机制（gating mechanism）来控制信息的流动，从而解决了普通RNN的梯度消失和长期依赖问题1。
+Dropout是一种常用的神经网络正则化方法，它的作用是在训练过程中随机地将一些神经元的输出值置为0，从而减少神经元之间的复杂交互，降低了网络过拟合的风险2。Dropout...
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+        <time itemprop="dateCreated datePublished" datetime="2023-09-16T00:00:00+08:00">2023-09-16</time>
+        
+          <span class="dot"></span>
+          <a class="category-link" href="/categories/pytorch/">pytorch</a>
+          
+            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+              <a href="/categories/pytorch/" itemprop="url"><span itemprop="name">pytorch</span></a>
+            </span>
+          
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/2023/09/16/pytorch/GRU%E4%B8%ADdroupout/' itemprop="url">
+            阅读全文
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
+  <link itemprop="mainEntityOfPage" href="http://breadwinners.top/2023/09/15/pytorch/Pytorch之permute函数/">
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="怒涛卷霜雪  天堑无涯">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
+    <meta itemprop="name" content="怒涛卷霜雪  天堑无涯">
+    <meta itemprop="description" content="test description">
+  </span>
+  
+  
+  
+    <span hidden>
+      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+    </span>
+  
+  
+    
+    <h2 class="article-title"  itemprop="name headline">
+      <a href="/2023/09/15/pytorch/Pytorch%E4%B9%8Bpermute%E5%87%BD%E6%95%B0/"  itemprop="url">
+        Pytorch之permute函数
+      </a>
+    </h2>
+  
+  <div class='md article-desc' itemprop="articleBody">
+    
+      
+        1 permute(dims)将tensor的维度换位。
+参数： - __dims__ (int ..*) - 换位顺序
+例：
+12345&gt;&gt;&gt; x = torch.randn(2, 3, 5) &gt;&gt;&gt; x.size() torch.Size([2, 3, 5]) &gt;&gt;&gt; x.permute(2, 0, 1).size() torch.S...
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+        <time itemprop="dateCreated datePublished" datetime="2023-09-15T00:00:00+08:00">2023-09-15</time>
+        
+          <span class="dot"></span>
+          <a class="category-link" href="/categories/pytorch/">pytorch</a>
+          
+            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+              <a href="/categories/pytorch/" itemprop="url"><span itemprop="name">pytorch</span></a>
+            </span>
+          
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/2023/09/15/pytorch/Pytorch%E4%B9%8Bpermute%E5%87%BD%E6%95%B0/' itemprop="url">
+            阅读全文
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
+  <link itemprop="mainEntityOfPage" href="http://breadwinners.top/2023/09/13/NLP/初步了解/">
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="怒涛卷霜雪  天堑无涯">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
+    <meta itemprop="name" content="怒涛卷霜雪  天堑无涯">
+    <meta itemprop="description" content="test description">
+  </span>
+  
+  
+  
+    <span hidden>
+      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+    </span>
+  
+  
+    
+    <h2 class="article-title"  itemprop="name headline">
+      <a href="/2023/09/13/NLP/%E5%88%9D%E6%AD%A5%E4%BA%86%E8%A7%A3/"  itemprop="url">
+        NLP初步了解
+      </a>
+    </h2>
+  
+  <div class='md article-desc' itemprop="articleBody">
+    
+      
+        停用词，停用词过滤词性标注 pos_tag分块命名实体识别spaCy后起之秀，nltk可以做的事情几乎都可以做，而且封装的更好统计傲慢与偏见的句子，人名出现次数恐怖袭击识别统计恐怖组织在哪些国家制造了多少次袭击jieba分词器添加jieba自定义词典，两种方式提取关键词，jieba.analyse.extract_tagsjieba词性标注词云无监督学习，word2vec，负采样模型，因为预...
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+        <time itemprop="dateCreated datePublished" datetime="2023-09-13T00:00:00+08:00">2023-09-13</time>
+        
+          <span class="dot"></span>
+          <a class="category-link" href="/categories/NLP/">NLP</a>
+          
+            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+              <a href="/categories/NLP/" itemprop="url"><span itemprop="name">NLP</span></a>
+            </span>
+          
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/2023/09/13/NLP/%E5%88%9D%E6%AD%A5%E4%BA%86%E8%A7%A3/' itemprop="url">
+            阅读全文
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
+  <link itemprop="mainEntityOfPage" href="http://breadwinners.top/2023/09/12/pytorch/Embedding/">
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="怒涛卷霜雪  天堑无涯">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
+    <meta itemprop="name" content="怒涛卷霜雪  天堑无涯">
+    <meta itemprop="description" content="test description">
+  </span>
+  
+  
+  
+    <span hidden>
+      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+    </span>
+  
+  
+    
+    <h2 class="article-title"  itemprop="name headline">
+      <a href="/2023/09/12/pytorch/Embedding/"  itemprop="url">
+        Embedding
+      </a>
+    </h2>
+  
+  <div class='md article-desc' itemprop="articleBody">
+    
+      
+        Embedding操作数据降维
+
+
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+        <time itemprop="dateCreated datePublished" datetime="2023-09-12T00:00:00+08:00">2023-09-12</time>
+        
+          <span class="dot"></span>
+          <a class="category-link" href="/categories/pytorch/">pytorch</a>
+          
+            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+              <a href="/categories/pytorch/" itemprop="url"><span itemprop="name">pytorch</span></a>
+            </span>
+          
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/2023/09/12/pytorch/Embedding/' itemprop="url">
+            阅读全文
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
+  <link itemprop="mainEntityOfPage" href="http://breadwinners.top/2023/09/06/pytorch/RNN问题/">
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="怒涛卷霜雪  天堑无涯">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
+    <meta itemprop="name" content="怒涛卷霜雪  天堑无涯">
+    <meta itemprop="description" content="test description">
+  </span>
+  
+  
+  
+    <span hidden>
+      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+    </span>
+  
+  
+    
+    <h2 class="article-title"  itemprop="name headline">
+      <a href="/2023/09/06/pytorch/RNN%E9%97%AE%E9%A2%98/"  itemprop="url">
+        2023年9月6日
+      </a>
+    </h2>
+  
+  <div class='md article-desc' itemprop="articleBody">
+    
+      
+        RNN 并行计算有问题
+
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+        <time itemprop="dateCreated datePublished" datetime="2023-09-06T20:32:42+08:00">2023-09-06</time>
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/2023/09/06/pytorch/RNN%E9%97%AE%E9%A2%98/' itemprop="url">
+            阅读全文
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
+  <link itemprop="mainEntityOfPage" href="http://breadwinners.top/2023/09/05/Bugs/gcc error trying to exec ‘cc1plus‘ execvp no such file or directory /">
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="怒涛卷霜雪  天堑无涯">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
+    <meta itemprop="name" content="怒涛卷霜雪  天堑无涯">
+    <meta itemprop="description" content="test description">
+  </span>
+  
+  
+  
+    <span hidden>
+      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+    </span>
+  
+  
+    
+    <h2 class="article-title"  itemprop="name headline">
+      <a href="/2023/09/05/Bugs/gcc%20error%20trying%20to%20exec%20%E2%80%98cc1plus%E2%80%98%20execvp%20no%20such%20file%20or%20directory%20/"  itemprop="url">
+        gcc error trying to exec ‘cc1plus‘ execvp no such file or directory
+      </a>
+    </h2>
+  
+  <div class='md article-desc' itemprop="articleBody">
+    
+      
+        问题：1gcc error trying to exec ‘cc1plus‘ execvp no such file or directory   
+系统中缺少一些东西，比如g++
+解决：1、切换root用户，或有权限的用户使用sudo
+2、执行以下在线安装代码：
+1yum install gcc-c++
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+        <time itemprop="dateCreated datePublished" datetime="2023-09-05T00:00:00+08:00">2023-09-05</time>
+        
+          <span class="dot"></span>
+          <a class="category-link" href="/categories/Bugs/">Bugs</a>
+          
+            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+              <a href="/categories/Bugs/" itemprop="url"><span itemprop="name">Bugs</span></a>
+            </span>
+          
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/2023/09/05/Bugs/gcc%20error%20trying%20to%20exec%20%E2%80%98cc1plus%E2%80%98%20execvp%20no%20such%20file%20or%20directory%20/' itemprop="url">
+            阅读全文
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
       
         
           <div class='post-wrapper'>
@@ -2658,601 +3254,6 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           </div>
         
       
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://breadwinners.top/2023/08/25/pytorch/cannot import name ‘container_abcs‘ from ‘torch._six‘/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="怒涛卷霜雪  天堑无涯">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="怒涛卷霜雪  天堑无涯">
-    <meta itemprop="description" content="test description">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2023/08/25/pytorch/cannot%20import%20name%20%E2%80%98container_abcs%E2%80%98%20from%20%E2%80%98torch._six%E2%80%98/"  itemprop="url">
-        cannot import name ‘container_abcs‘ from ‘torch._six‘
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        还有两个错误（同样的解决方法）：
-12ImportError: cannot import name &#x27;container_abcs&#x27; from &#x27;torch.six&#x27; ImportError: cannot import name &#x27;int_classes&#x27; from &#x27;torch.six&#x27;
-
-
-在1.8版本之...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2023-08-25T00:00:00+08:00">2023-08-25</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/pytorch/">pytorch</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/pytorch/" itemprop="url"><span itemprop="name">pytorch</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2023/08/25/pytorch/cannot%20import%20name%20%E2%80%98container_abcs%E2%80%98%20from%20%E2%80%98torch._six%E2%80%98/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://breadwinners.top/2023/08/24/机器学习算法/机器学习算法/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="怒涛卷霜雪  天堑无涯">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="怒涛卷霜雪  天堑无涯">
-    <meta itemprop="description" content="test description">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2023/08/24/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AE%97%E6%B3%95/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AE%97%E6%B3%95/"  itemprop="url">
-        机器学习算法
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        KNN
-
-决策树
-min_sample_split是&#x3D;&#x3D;分割所需的最小样本数&#x3D;&#x3D;。例如，如果min_sample_split = 6并且节点中有4个样本，则不会发生拆分（不管熵是多少）。在
-另一方面，min_sample_leaf是&#x3D;&#x3D;叶节点所需的最小样本数&#x3D;&#x3D;。假设min_sample_leaf = 3并且一个...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2023-08-24T00:00:00+08:00">2023-08-24</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AE%97%E6%B3%95/">机器学习算法</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AE%97%E6%B3%95/" itemprop="url"><span itemprop="name">机器学习算法</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2023/08/24/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AE%97%E6%B3%95/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AE%97%E6%B3%95/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://breadwinners.top/2023/08/20/pytorch/迁移学习torchvision.model加载模型参数时出错/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="怒涛卷霜雪  天堑无涯">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="怒涛卷霜雪  天堑无涯">
-    <meta itemprop="description" content="test description">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2023/08/20/pytorch/%E8%BF%81%E7%A7%BB%E5%AD%A6%E4%B9%A0torchvision.model%E5%8A%A0%E8%BD%BD%E6%A8%A1%E5%9E%8B%E5%8F%82%E6%95%B0%E6%97%B6%E5%87%BA%E9%94%99/"  itemprop="url">
-        迁移学习 torchvision.models 加载模型参数时报错
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        最近安装或者更新了 PyTorch 和 torchvision 的同志们在跑代码时，可能会遇到如下三种报错：
-
-
-UserWarning: The parameter ‘pretrained’ is deprecated since 0.13 and will be removed in 0.15, please use ‘weights’ instead.
-
-UserWarning: Ar...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2023-08-20T00:00:00+08:00">2023-08-20</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/pytorch/">pytorch</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/pytorch/" itemprop="url"><span itemprop="name">pytorch</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2023/08/20/pytorch/%E8%BF%81%E7%A7%BB%E5%AD%A6%E4%B9%A0torchvision.model%E5%8A%A0%E8%BD%BD%E6%A8%A1%E5%9E%8B%E5%8F%82%E6%95%B0%E6%97%B6%E5%87%BA%E9%94%99/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://breadwinners.top/2023/08/15/小技巧/opencv和numpy匹配的版本/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="怒涛卷霜雪  天堑无涯">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="怒涛卷霜雪  天堑无涯">
-    <meta itemprop="description" content="test description">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2023/08/15/%E5%B0%8F%E6%8A%80%E5%B7%A7/opencv%E5%92%8Cnumpy%E5%8C%B9%E9%85%8D%E7%9A%84%E7%89%88%E6%9C%AC/"  itemprop="url">
-        opencv和numpy匹配的版本
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        以下版本亲测可用：
-
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2023-08-15T00:00:00+08:00">2023-08-15</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E5%B0%8F%E6%8A%80%E5%B7%A7/">小技巧</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E5%B0%8F%E6%8A%80%E5%B7%A7/" itemprop="url"><span itemprop="name">小技巧</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2023/08/15/%E5%B0%8F%E6%8A%80%E5%B7%A7/opencv%E5%92%8Cnumpy%E5%8C%B9%E9%85%8D%E7%9A%84%E7%89%88%E6%9C%AC/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://breadwinners.top/2023/08/09/混淆矩阵/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="怒涛卷霜雪  天堑无涯">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="怒涛卷霜雪  天堑无涯">
-    <meta itemprop="description" content="test description">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2023/08/09/%E6%B7%B7%E6%B7%86%E7%9F%A9%E9%98%B5/"  itemprop="url">
-        混淆矩阵
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        混淆矩阵的定义混淆矩阵（Confusion Matrix），它的本质远没有它的名字听上去那么拉风。矩阵，可以理解为就是一张表格，混淆矩阵其实就是一张表格而已。
-以分类模型中最简单的二分类为例，对于这种问题，我们的模型最终需要判断样本的结果是0还是1，或者说是positive还是negative。
-我们通过样本的采集，能够直接知道真实情况下，哪些数据结果是positive，哪些结果是negat...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2023-08-09T00:00:00+08:00">2023-08-09</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E5%B0%8F%E5%9C%9F%E5%A0%86pytorch/">小土堆pytorch</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E5%B0%8F%E5%9C%9F%E5%A0%86pytorch/" itemprop="url"><span itemprop="name">小土堆pytorch</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2023/08/09/%E6%B7%B7%E6%B7%86%E7%9F%A9%E9%98%B5/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://breadwinners.top/2023/08/08/小技巧/pycharm找不到conda可执行文件怎么办？/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="怒涛卷霜雪  天堑无涯">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="怒涛卷霜雪  天堑无涯">
-    <meta itemprop="description" content="test description">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2023/08/08/%E5%B0%8F%E6%8A%80%E5%B7%A7/pycharm%E6%89%BE%E4%B8%8D%E5%88%B0conda%E5%8F%AF%E6%89%A7%E8%A1%8C%E6%96%87%E4%BB%B6%E6%80%8E%E4%B9%88%E5%8A%9E%EF%BC%9F/"  itemprop="url">
-        pycharm找不到conda可执行文件怎么办？
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        问题如图：在配置pycharm conda环境的过程中，pycharm找不到conda可执行文件
-
-
-解决办法：实际上应该选择
-
-
-然后就可以看到配置好的虚拟环境了
-
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2023-08-08T00:00:00+08:00">2023-08-08</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E5%B0%8F%E6%8A%80%E5%B7%A7/">小技巧</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E5%B0%8F%E6%8A%80%E5%B7%A7/" itemprop="url"><span itemprop="name">小技巧</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2023/08/08/%E5%B0%8F%E6%8A%80%E5%B7%A7/pycharm%E6%89%BE%E4%B8%8D%E5%88%B0conda%E5%8F%AF%E6%89%A7%E8%A1%8C%E6%96%87%E4%BB%B6%E6%80%8E%E4%B9%88%E5%8A%9E%EF%BC%9F/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://breadwinners.top/2023/08/06/小土堆pytorch/模型训练套路/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="怒涛卷霜雪  天堑无涯">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="怒涛卷霜雪  天堑无涯">
-    <meta itemprop="description" content="test description">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2023/08/06/%E5%B0%8F%E5%9C%9F%E5%A0%86pytorch/%E6%A8%A1%E5%9E%8B%E8%AE%AD%E7%BB%83%E5%A5%97%E8%B7%AF/"  itemprop="url">
-        模型训练套路
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        
-
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2023-08-06T00:00:00+08:00">2023-08-06</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E5%B0%8F%E5%9C%9F%E5%A0%86pytorch/">小土堆pytorch</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E5%B0%8F%E5%9C%9F%E5%A0%86pytorch/" itemprop="url"><span itemprop="name">小土堆pytorch</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2023/08/06/%E5%B0%8F%E5%9C%9F%E5%A0%86pytorch/%E6%A8%A1%E5%9E%8B%E8%AE%AD%E7%BB%83%E5%A5%97%E8%B7%AF/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://breadwinners.top/2023/08/05/小土堆pytorch/模型的存取/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="怒涛卷霜雪  天堑无涯">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="怒涛卷霜雪  天堑无涯">
-    <meta itemprop="description" content="test description">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2023/08/05/%E5%B0%8F%E5%9C%9F%E5%A0%86pytorch/%E6%A8%A1%E5%9E%8B%E7%9A%84%E5%AD%98%E5%8F%96/"  itemprop="url">
-        模型的存取
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        存模型1234567891011121314151617181920212223import torchimport torchvisionfrom torch import nnvgg16 = torchvision.models.vgg16(pretrained=False)# 保存方式1,模型结构+模型参数torch.save(vgg16, &quot;vgg16_method1.pt...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2023-08-05T00:00:00+08:00">2023-08-05</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E5%B0%8F%E5%9C%9F%E5%A0%86pytorch/">小土堆pytorch</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E5%B0%8F%E5%9C%9F%E5%A0%86pytorch/" itemprop="url"><span itemprop="name">小土堆pytorch</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2023/08/05/%E5%B0%8F%E5%9C%9F%E5%A0%86pytorch/%E6%A8%A1%E5%9E%8B%E7%9A%84%E5%AD%98%E5%8F%96/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://breadwinners.top/2023/08/05/小土堆pytorch/加载预训练模型及参数修改/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="怒涛卷霜雪  天堑无涯">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="怒涛卷霜雪  天堑无涯">
-    <meta itemprop="description" content="test description">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2023/08/05/%E5%B0%8F%E5%9C%9F%E5%A0%86pytorch/%E5%8A%A0%E8%BD%BD%E9%A2%84%E8%AE%AD%E7%BB%83%E6%A8%A1%E5%9E%8B%E5%8F%8A%E5%8F%82%E6%95%B0%E4%BF%AE%E6%94%B9/"  itemprop="url">
-        加载预训练模型及参数修改
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        代码
-添加一层
-直接修改最后一层为新的层
-
-123456789101112131415161718192021import torchvisionimport torch.nn as nn# 加载vgg16模型，并将其设置为预训练模型vgg16_false = torchvision.models.vgg16(pretrained=False)vgg16_true = torchvision...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2023-08-05T00:00:00+08:00">2023-08-05</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E5%B0%8F%E5%9C%9F%E5%A0%86pytorch/">小土堆pytorch</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E5%B0%8F%E5%9C%9F%E5%A0%86pytorch/" itemprop="url"><span itemprop="name">小土堆pytorch</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2023/08/05/%E5%B0%8F%E5%9C%9F%E5%A0%86pytorch/%E5%8A%A0%E8%BD%BD%E9%A2%84%E8%AE%AD%E7%BB%83%E6%A8%A1%E5%9E%8B%E5%8F%8A%E5%8F%82%E6%95%B0%E4%BF%AE%E6%94%B9/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
     
   </section>
   
@@ -3261,7 +3262,7 @@ UserWarning: Ar...
       <div class="prev-next">
         
         <p class="current">
-          1 / 9
+          1 / 10
         </p>
         
           <a class="next" rel="next" href="/page/2/">
@@ -3358,14 +3359,34 @@ UserWarning: Ar...
       <ul class="entry navigation">
         
           <li><a class="flat-box"
+            title="/categories/Bugs/" href="/categories/Bugs/"
+            active-action="action-categoriesBugs"
+            ><div class='name'>Bugs</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box"
             title="/categories/Linux/" href="/categories/Linux/"
             active-action="action-categoriesLinux"
             ><div class='name'>Linux</div><div class='badge'>(9)</div></a></li>
         
           <li><a class="flat-box"
+            title="/categories/NLP/" href="/categories/NLP/"
+            active-action="action-categoriesNLP"
+            ><div class='name'>NLP</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box"
             title="/categories/Python/" href="/categories/Python/"
             active-action="action-categoriesPython"
             ><div class='name'>Python</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box"
+            title="/categories/bert/" href="/categories/bert/"
+            active-action="action-categoriesbert"
+            ><div class='name'>bert</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box"
+            title="/categories/bertzh/" href="/categories/bertzh/"
+            active-action="action-categoriesbertzh"
+            ><div class='name'>bertzh</div><div class='badge'>(1)</div></a></li>
         
           <li><a class="flat-box"
             title="/categories/bugs/" href="/categories/bugs/"
@@ -3385,7 +3406,7 @@ UserWarning: Ar...
           <li><a class="flat-box"
             title="/categories/pytorch/" href="/categories/pytorch/"
             active-action="action-categoriespytorch"
-            ><div class='name'>pytorch</div><div class='badge'>(16)</div></a></li>
+            ><div class='name'>pytorch</div><div class='badge'>(19)</div></a></li>
         
           <li><a class="flat-box"
             title="/categories/use/" href="/categories/use/"
@@ -3475,7 +3496,7 @@ UserWarning: Ar...
 
 
     <div class='content'>
-      <a href="/tags/bashrc/" style="font-size: 14px; color: #999">.bashrc</a> <a href="/tags/DP/" style="font-size: 14px; color: #999">DP</a> <a href="/tags/DataLoader/" style="font-size: 14px; color: #999">DataLoader</a> <a href="/tags/GoogleNet/" style="font-size: 14px; color: #999">GoogleNet</a> <a href="/tags/HashMap/" style="font-size: 14px; color: #999">HashMap</a> <a href="/tags/Inception-Module/" style="font-size: 14px; color: #999">Inception Module</a> <a href="/tags/Linear/" style="font-size: 14px; color: #999">Linear</a> <a href="/tags/Linux%E8%A7%A3%E5%8E%8Brar/" style="font-size: 14px; color: #999">Linux解压rar</a> <a href="/tags/Nvidia/" style="font-size: 14px; color: #999">Nvidia</a> <a href="/tags/Residual-Network/" style="font-size: 14px; color: #999">Residual Network</a> <a href="/tags/STL/" style="font-size: 14px; color: #999">STL</a> <a href="/tags/Trie/" style="font-size: 14px; color: #999">Trie</a> <a href="/tags/Weights-IMAGENET1K-V1/" style="font-size: 14px; color: #999">Weights.IMAGENET1K_V1</a> <a href="/tags/conda/" style="font-size: 14px; color: #999">_conda</a> <a href="/tags/axis/" style="font-size: 14px; color: #999">axis</a> <a href="/tags/bash-4-2/" style="font-size: 14px; color: #999">bash-4.2$</a> <a href="/tags/bfs/" style="font-size: 14px; color: #999">bfs</a> <a href="/tags/bin%E7%9B%AE%E5%BD%95/" style="font-size: 14px; color: #999">bin目录</a> <a href="/tags/bugs/" style="font-size: 14px; color: #999">bugs</a> <a href="/tags/centos/" style="font-size: 14px; color: #999">centos</a> <a href="/tags/cin/" style="font-size: 14px; color: #999">cin</a> <a href="/tags/cnn/" style="font-size: 24px; color: #555">cnn</a> <a href="/tags/container-abcs/" style="font-size: 14px; color: #999">container_abcs</a> <a href="/tags/cout/" style="font-size: 14px; color: #999">cout</a> <a href="/tags/cuda/" style="font-size: 14px; color: #999">cuda</a> <a href="/tags/cuda12-2/" style="font-size: 14px; color: #999">cuda12.2</a> <a href="/tags/datasets/" style="font-size: 14px; color: #999">datasets</a> <a href="/tags/dfs/" style="font-size: 14px; color: #999">dfs</a> <a href="/tags/flume/" style="font-size: 14px; color: #999">flume</a> <a href="/tags/frp/" style="font-size: 24px; color: #555">frp</a> <a href="/tags/gcc/" style="font-size: 14px; color: #999">gcc</a> <a href="/tags/gdb/" style="font-size: 14px; color: #999">gdb</a> <a href="/tags/graph/" style="font-size: 14px; color: #999">graph</a> <a href="/tags/greedy/" style="font-size: 14px; color: #999">greedy</a> <a href="/tags/heap/" style="font-size: 14px; color: #999">heap</a> <a href="/tags/hidden/" style="font-size: 14px; color: #999">hidden</a> <a href="/tags/kmp/" style="font-size: 14px; color: #999">kmp</a> <a href="/tags/lsbsk/" style="font-size: 14px; color: #999">lsbsk</a> <a href="/tags/maven/" style="font-size: 14px; color: #999">maven</a> <a href="/tags/mysql/" style="font-size: 14px; color: #999">mysql</a> <a href="/tags/nginx/" style="font-size: 14px; color: #999">nginx</a> <a href="/tags/ontHot/" style="font-size: 14px; color: #999">ontHot</a> <a href="/tags/picgo/" style="font-size: 14px; color: #999">picgo</a> <a href="/tags/quick/" style="font-size: 14px; color: #999">quick</a> <a href="/tags/redis/" style="font-size: 14px; color: #999">redis</a> <a href="/tags/rnn/" style="font-size: 14px; color: #999">rnn</a> <a href="/tags/sbt/" style="font-size: 14px; color: #999">sbt</a> <a href="/tags/shape/" style="font-size: 14px; color: #999">shape()</a> <a href="/tags/softmax/" style="font-size: 14px; color: #999">softmax</a> <a href="/tags/sort/" style="font-size: 24px; color: #555">sort</a> <a href="/tags/spark/" style="font-size: 24px; color: #555">spark</a> <a href="/tags/su/" style="font-size: 14px; color: #999">su</a> <a href="/tags/sudo/" style="font-size: 14px; color: #999">sudo</a> <a href="/tags/test/" style="font-size: 14px; color: #999">test</a> <a href="/tags/titanic/" style="font-size: 24px; color: #555">titanic</a> <a href="/tags/torch-six/" style="font-size: 14px; color: #999">torch._six</a> <a href="/tags/wsl/" style="font-size: 14px; color: #999">wsl</a> <a href="/tags/wsl2/" style="font-size: 14px; color: #999">wsl2</a> <a href="/tags/%E4%B8%8D%E8%83%BD%E5%87%91%E5%87%BA%E7%9A%84%E6%9C%80%E5%A4%A7%E6%95%B4%E6%95%B0/" style="font-size: 14px; color: #999">不能凑出的最大整数</a> <a href="/tags/%E4%BA%8C%E5%88%86/" style="font-size: 14px; color: #999">二分</a> <a href="/tags/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/" style="font-size: 14px; color: #999">内网穿透</a> <a href="/tags/%E5%86%B3%E7%AD%96%E6%A0%91/" style="font-size: 14px; color: #999">决策树</a> <a href="/tags/%E5%89%8D%E7%BC%80%E5%92%8C/" style="font-size: 14px; color: #999">前缀和</a> <a href="/tags/%E5%8F%8C%E6%8C%87%E9%92%88/" style="font-size: 14px; color: #999">双指针</a> <a href="/tags/%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD/" style="font-size: 14px; color: #999">反向传播</a> <a href="/tags/%E5%9B%BE%E8%AE%BA/" style="font-size: 14px; color: #999">图论</a> <a href="/tags/%E5%A4%9A%E5%88%86%E7%B1%BB/" style="font-size: 14px; color: #999">多分类</a> <a href="/tags/%E5%A4%9A%E7%BB%B4%E5%BA%A6%E7%89%B9%E5%BE%81/" style="font-size: 14px; color: #999">多维度特征</a> <a href="/tags/%E5%AE%B9%E5%99%A8/" style="font-size: 14px; color: #999">容器</a> <a href="/tags/%E5%B7%AE%E5%88%86/" style="font-size: 14px; color: #999">差分</a> <a href="/tags/%E6%89%8B%E5%86%99%E5%A0%86/" style="font-size: 14px; color: #999">手写堆</a> <a href="/tags/%E6%89%93%E5%8C%85%E4%BE%9D%E8%B5%96/" style="font-size: 14px; color: #999">打包依赖</a> <a href="/tags/%E6%95%B0%E7%BB%84%E5%8D%95%E9%93%BE%E8%A1%A8/" style="font-size: 14px; color: #999">数组单链表</a> <a href="/tags/%E6%95%B0%E8%AE%BA/" style="font-size: 14px; color: #999">数论</a> <a href="/tags/%E6%9A%B4%E5%8A%9B/" style="font-size: 24px; color: #555">暴力</a> <a href="/tags/%E6%A0%87%E7%AD%BE%E5%90%8D/" style="font-size: 14px; color: #999">标签名</a> <a href="/tags/%E6%A2%AF%E5%BA%A6%E4%B8%8B%E9%99%8D/" style="font-size: 14px; color: #999">梯度下降</a> <a href="/tags/%E6%A2%AF%E5%BA%A6%E6%B6%88%E5%A4%B1/" style="font-size: 14px; color: #999">梯度消失</a> <a href="/tags/%E6%A8%A1%E6%8B%9F/" style="font-size: 24px; color: #555">模拟</a> <a href="/tags/%E6%B5%8F%E8%A7%88%E5%99%A8%E6%8F%92%E4%BB%B6/" style="font-size: 14px; color: #999">浏览器插件</a> <a href="/tags/%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3/" style="font-size: 14px; color: #999">滑动窗口</a> <a href="/tags/%E7%9B%91%E7%9D%A3%E5%AD%A6%E4%B9%A0/" style="font-size: 14px; color: #999">监督学习</a> <a href="/tags/%E7%A3%81%E7%9B%98%E5%88%86%E5%8C%BA/" style="font-size: 14px; color: #999">磁盘分区</a> <a href="/tags/%E7%A6%BB%E6%95%A3%E5%8C%96/" style="font-size: 14px; color: #999">离散化</a> <a href="/tags/%E7%A7%91%E5%A4%A7%E6%9C%AA%E6%9D%A5/" style="font-size: 24px; color: #555">科大未来</a> <a href="/tags/%E8%AE%BA%E6%96%87/" style="font-size: 14px; color: #999">论文</a> <a href="/tags/%E8%B4%AA%E5%BF%83/" style="font-size: 14px; color: #999">贪心</a> <a href="/tags/%E8%BF%9C%E7%A8%8B%E5%BC%80%E5%8F%91/" style="font-size: 14px; color: #999">远程开发</a> <a href="/tags/%E8%BF%9E%E9%80%9A%E5%9D%97/" style="font-size: 14px; color: #999">连通块</a> <a href="/tags/%E9%9A%8F%E6%9C%BA%E6%A2%AF%E5%BA%A6%E4%B8%8B%E9%99%8D/" style="font-size: 14px; color: #999">随机梯度下降</a> <a href="/tags/%E9%9D%99%E6%80%81ip/" style="font-size: 14px; color: #999">静态ip</a> <a href="/tags/%E9%9D%9E%E7%9B%91%E7%9D%A3%E5%AD%A6%E4%B9%A0/" style="font-size: 14px; color: #999">非监督学习</a>
+      <a href="/tags/bashrc/" style="font-size: 14px; color: #999">.bashrc</a> <a href="/tags/DP/" style="font-size: 14px; color: #999">DP</a> <a href="/tags/DataLoader/" style="font-size: 14px; color: #999">DataLoader</a> <a href="/tags/GRU/" style="font-size: 14px; color: #999">GRU</a> <a href="/tags/GoogleNet/" style="font-size: 14px; color: #999">GoogleNet</a> <a href="/tags/HashMap/" style="font-size: 14px; color: #999">HashMap</a> <a href="/tags/Inception-Module/" style="font-size: 14px; color: #999">Inception Module</a> <a href="/tags/Linear/" style="font-size: 14px; color: #999">Linear</a> <a href="/tags/Linux%E8%A7%A3%E5%8E%8Brar/" style="font-size: 14px; color: #999">Linux解压rar</a> <a href="/tags/Nvidia/" style="font-size: 14px; color: #999">Nvidia</a> <a href="/tags/Residual-Network/" style="font-size: 14px; color: #999">Residual Network</a> <a href="/tags/STL/" style="font-size: 14px; color: #999">STL</a> <a href="/tags/Trie/" style="font-size: 14px; color: #999">Trie</a> <a href="/tags/Weights-IMAGENET1K-V1/" style="font-size: 14px; color: #999">Weights.IMAGENET1K_V1</a> <a href="/tags/conda/" style="font-size: 14px; color: #999">_conda</a> <a href="/tags/axis/" style="font-size: 14px; color: #999">axis</a> <a href="/tags/bash-4-2/" style="font-size: 14px; color: #999">bash-4.2$</a> <a href="/tags/bfs/" style="font-size: 14px; color: #999">bfs</a> <a href="/tags/bin%E7%9B%AE%E5%BD%95/" style="font-size: 14px; color: #999">bin目录</a> <a href="/tags/bugs/" style="font-size: 14px; color: #999">bugs</a> <a href="/tags/cc1plus/" style="font-size: 14px; color: #999">cc1plus</a> <a href="/tags/centos/" style="font-size: 14px; color: #999">centos</a> <a href="/tags/cin/" style="font-size: 14px; color: #999">cin</a> <a href="/tags/cnn/" style="font-size: 24px; color: #555">cnn</a> <a href="/tags/container-abcs/" style="font-size: 14px; color: #999">container_abcs</a> <a href="/tags/cout/" style="font-size: 14px; color: #999">cout</a> <a href="/tags/cuda/" style="font-size: 14px; color: #999">cuda</a> <a href="/tags/cuda12-2/" style="font-size: 14px; color: #999">cuda12.2</a> <a href="/tags/datasets/" style="font-size: 14px; color: #999">datasets</a> <a href="/tags/dfs/" style="font-size: 14px; color: #999">dfs</a> <a href="/tags/dropout/" style="font-size: 14px; color: #999">dropout</a> <a href="/tags/embedding/" style="font-size: 14px; color: #999">embedding</a> <a href="/tags/flume/" style="font-size: 14px; color: #999">flume</a> <a href="/tags/frp/" style="font-size: 24px; color: #555">frp</a> <a href="/tags/gcc/" style="font-size: 14px; color: #999">gcc</a> <a href="/tags/gdb/" style="font-size: 14px; color: #999">gdb</a> <a href="/tags/graph/" style="font-size: 14px; color: #999">graph</a> <a href="/tags/greedy/" style="font-size: 14px; color: #999">greedy</a> <a href="/tags/heap/" style="font-size: 14px; color: #999">heap</a> <a href="/tags/hidden/" style="font-size: 14px; color: #999">hidden</a> <a href="/tags/kmp/" style="font-size: 14px; color: #999">kmp</a> <a href="/tags/lsbsk/" style="font-size: 14px; color: #999">lsbsk</a> <a href="/tags/maven/" style="font-size: 14px; color: #999">maven</a> <a href="/tags/mysql/" style="font-size: 14px; color: #999">mysql</a> <a href="/tags/nginx/" style="font-size: 14px; color: #999">nginx</a> <a href="/tags/one-hot/" style="font-size: 14px; color: #999">one-hot</a> <a href="/tags/ontHot/" style="font-size: 14px; color: #999">ontHot</a> <a href="/tags/permute/" style="font-size: 14px; color: #999">permute</a> <a href="/tags/picgo/" style="font-size: 14px; color: #999">picgo</a> <a href="/tags/quick/" style="font-size: 14px; color: #999">quick</a> <a href="/tags/redis/" style="font-size: 14px; color: #999">redis</a> <a href="/tags/rnn/" style="font-size: 14px; color: #999">rnn</a> <a href="/tags/sbt/" style="font-size: 14px; color: #999">sbt</a> <a href="/tags/shape/" style="font-size: 14px; color: #999">shape()</a> <a href="/tags/softmax/" style="font-size: 14px; color: #999">softmax</a> <a href="/tags/sort/" style="font-size: 24px; color: #555">sort</a> <a href="/tags/spark/" style="font-size: 24px; color: #555">spark</a> <a href="/tags/su/" style="font-size: 14px; color: #999">su</a> <a href="/tags/sudo/" style="font-size: 14px; color: #999">sudo</a> <a href="/tags/test/" style="font-size: 14px; color: #999">test</a> <a href="/tags/titanic/" style="font-size: 24px; color: #555">titanic</a> <a href="/tags/torch-six/" style="font-size: 14px; color: #999">torch._six</a> <a href="/tags/wsl/" style="font-size: 14px; color: #999">wsl</a> <a href="/tags/wsl2/" style="font-size: 14px; color: #999">wsl2</a> <a href="/tags/%E4%B8%8D%E8%83%BD%E5%87%91%E5%87%BA%E7%9A%84%E6%9C%80%E5%A4%A7%E6%95%B4%E6%95%B0/" style="font-size: 14px; color: #999">不能凑出的最大整数</a> <a href="/tags/%E4%BA%8C%E5%88%86/" style="font-size: 14px; color: #999">二分</a> <a href="/tags/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/" style="font-size: 14px; color: #999">内网穿透</a> <a href="/tags/%E5%86%B3%E7%AD%96%E6%A0%91/" style="font-size: 14px; color: #999">决策树</a> <a href="/tags/%E5%89%8D%E7%BC%80%E5%92%8C/" style="font-size: 14px; color: #999">前缀和</a> <a href="/tags/%E5%8F%8C%E6%8C%87%E9%92%88/" style="font-size: 14px; color: #999">双指针</a> <a href="/tags/%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD/" style="font-size: 14px; color: #999">反向传播</a> <a href="/tags/%E5%9B%BE%E8%AE%BA/" style="font-size: 14px; color: #999">图论</a> <a href="/tags/%E5%A4%9A%E5%88%86%E7%B1%BB/" style="font-size: 14px; color: #999">多分类</a> <a href="/tags/%E5%A4%9A%E7%BB%B4%E5%BA%A6%E7%89%B9%E5%BE%81/" style="font-size: 14px; color: #999">多维度特征</a> <a href="/tags/%E5%AE%B9%E5%99%A8/" style="font-size: 14px; color: #999">容器</a> <a href="/tags/%E5%B7%AE%E5%88%86/" style="font-size: 14px; color: #999">差分</a> <a href="/tags/%E6%89%8B%E5%86%99%E5%A0%86/" style="font-size: 14px; color: #999">手写堆</a> <a href="/tags/%E6%89%93%E5%8C%85%E4%BE%9D%E8%B5%96/" style="font-size: 14px; color: #999">打包依赖</a> <a href="/tags/%E6%95%B0%E7%BB%84%E5%8D%95%E9%93%BE%E8%A1%A8/" style="font-size: 14px; color: #999">数组单链表</a> <a href="/tags/%E6%95%B0%E8%AE%BA/" style="font-size: 14px; color: #999">数论</a> <a href="/tags/%E6%9A%B4%E5%8A%9B/" style="font-size: 24px; color: #555">暴力</a> <a href="/tags/%E6%A0%87%E7%AD%BE%E5%90%8D/" style="font-size: 14px; color: #999">标签名</a> <a href="/tags/%E6%A2%AF%E5%BA%A6%E4%B8%8B%E9%99%8D/" style="font-size: 14px; color: #999">梯度下降</a> <a href="/tags/%E6%A2%AF%E5%BA%A6%E6%B6%88%E5%A4%B1/" style="font-size: 14px; color: #999">梯度消失</a> <a href="/tags/%E6%A8%A1%E6%8B%9F/" style="font-size: 24px; color: #555">模拟</a> <a href="/tags/%E6%B5%8F%E8%A7%88%E5%99%A8%E6%8F%92%E4%BB%B6/" style="font-size: 14px; color: #999">浏览器插件</a> <a href="/tags/%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3/" style="font-size: 14px; color: #999">滑动窗口</a> <a href="/tags/%E7%9B%91%E7%9D%A3%E5%AD%A6%E4%B9%A0/" style="font-size: 14px; color: #999">监督学习</a> <a href="/tags/%E7%A3%81%E7%9B%98%E5%88%86%E5%8C%BA/" style="font-size: 14px; color: #999">磁盘分区</a> <a href="/tags/%E7%A6%BB%E6%95%A3%E5%8C%96/" style="font-size: 14px; color: #999">离散化</a> <a href="/tags/%E7%A7%91%E5%A4%A7%E6%9C%AA%E6%9D%A5/" style="font-size: 24px; color: #555">科大未来</a> <a href="/tags/%E8%AE%BA%E6%96%87/" style="font-size: 14px; color: #999">论文</a> <a href="/tags/%E8%B4%AA%E5%BF%83/" style="font-size: 14px; color: #999">贪心</a> <a href="/tags/%E8%BF%9C%E7%A8%8B%E5%BC%80%E5%8F%91/" style="font-size: 14px; color: #999">远程开发</a> <a href="/tags/%E8%BF%9E%E9%80%9A%E5%9D%97/" style="font-size: 14px; color: #999">连通块</a> <a href="/tags/%E9%9A%8F%E6%9C%BA%E6%A2%AF%E5%BA%A6%E4%B8%8B%E9%99%8D/" style="font-size: 14px; color: #999">随机梯度下降</a> <a href="/tags/%E9%9D%99%E6%80%81ip/" style="font-size: 14px; color: #999">静态ip</a> <a href="/tags/%E9%9D%9E%E7%9B%91%E7%9D%A3%E5%AD%A6%E4%B9%A0/" style="font-size: 14px; color: #999">非监督学习</a>
     </div>
   </section>
 
