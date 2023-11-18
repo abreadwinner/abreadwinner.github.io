@@ -1625,7 +1625,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: "env",
     cdn: {"js":{"app":"/js/app.js","parallax":"/js/plugins/parallax.js","rightMenu":"/js/plugins/rightMenu.js","rightMenus":"/js/plugins/rightMenus.js","sites":"/js/plugins/tags/sites.js","friends":"/js/plugins/tags/friends.js","contributors":"/js/plugins/tags/contributors.js","search":"/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1699365869891),
+    lastupdate: new Date(1700315179366),
     sidebar: {
       for_page: ["blogger","category","tagcloud","donate","text"],
       for_post: ["toc"],
@@ -2404,6 +2404,84 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           <div class='post-wrapper'>
             <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
+  <link itemprop="mainEntityOfPage" href="http://breadwinners.top/2023/05/03/部署hexo到centos/">
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="怒涛卷霜雪  天堑无涯">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
+    <meta itemprop="name" content="怒涛卷霜雪  天堑无涯">
+    <meta itemprop="description" content="test description">
+  </span>
+  
+  
+  
+    <span hidden>
+      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+    </span>
+  
+  
+    
+    <h2 class="article-title"  itemprop="name headline">
+      <a href="/2023/05/03/%E9%83%A8%E7%BD%B2hexo%E5%88%B0centos/"  itemprop="url">
+        部署hexo到CentOs7
+      </a>
+    </h2>
+  
+  <div class='md article-desc' itemprop="articleBody">
+    
+      
+        git
+安装
+
+1yum install git
+
+
+测试
+
+1git --version
+
+
+输出类似下面的结果则表示安装成功
+
+1git version 1.8.3.1
+
+
+创建 git 用户
+
+1adduser git 
+
+
+建立裸仓
+
+12345su gitcd /home/git  # 进入 git 用户目录mkdir blog &amp;&amp; chown -R git:gi...
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+        <time itemprop="dateCreated datePublished" datetime="2023-05-03T00:00:00+08:00">2023-05-03</time>
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/2023/05/03/%E9%83%A8%E7%BD%B2hexo%E5%88%B0centos/' itemprop="url">
+            阅读全文
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
   <link itemprop="mainEntityOfPage" href="http://breadwinners.top/2023/05/03/Linux/centos7安装Mysql初始密码问题/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="怒涛卷霜雪  天堑无涯">
@@ -3009,77 +3087,6 @@ linux中创建了一个xhh用户，然后使用su命令切换用户后，终端�
           </div>
         
       
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://breadwinners.top/2023/04/17/bfs/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="怒涛卷霜雪  天堑无涯">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="怒涛卷霜雪  天堑无涯">
-    <meta itemprop="description" content="test description">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2023/04/17/bfs/"  itemprop="url">
-        BFS
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        不是所有的最短路径问题都可以用bfs来做，只有当边权相同的时候才能用bfs
-pair是一对值
-BFS一般框架
-
-走迷宫思路参考
-
-
-
-12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364#include &l...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2023-04-17T00:00:00+08:00">2023-04-17</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E7%AE%97%E6%B3%95/">算法</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E7%AE%97%E6%B3%95/" itemprop="url"><span itemprop="name">算法</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2023/04/17/bfs/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
     
   </section>
   
@@ -3273,7 +3280,7 @@ BFS一般框架
           <li><a class="flat-box"
             title="/categories/%E5%B0%8F%E6%8A%80%E5%B7%A7/" href="/categories/%E5%B0%8F%E6%8A%80%E5%B7%A7/"
             active-action="action-categoriesE5B08FE68A80E5B7A7"
-            ><div class='name'>小技巧</div><div class='badge'>(8)</div></a></li>
+            ><div class='name'>小技巧</div><div class='badge'>(9)</div></a></li>
         
           <li><a class="flat-box"
             title="/categories/%E6%8D%A3%E9%BC%93/" href="/categories/%E6%8D%A3%E9%BC%93/"
