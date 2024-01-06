@@ -1628,7 +1628,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: "env",
     cdn: {"js":{"app":"/js/app.js","parallax":"/js/plugins/parallax.js","rightMenu":"/js/plugins/rightMenu.js","rightMenus":"/js/plugins/rightMenus.js","sites":"/js/plugins/tags/sites.js","friends":"/js/plugins/tags/friends.js","contributors":"/js/plugins/tags/contributors.js","search":"/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1703146069280),
+    lastupdate: new Date(1704526417706),
     sidebar: {
       for_page: ["blogger","category","tagcloud","donate","text"],
       for_post: ["toc"],
@@ -2575,18 +2575,17 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     <div class="prev-next">
       
-        <a class='prev' href='/2023/07/20/pytorch/pytorch%E5%AE%9E%E7%8E%B0%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92/'>
-          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>pytorch实现线性回归</p>
-          <p class='content'>pytorch构建风格：
-代码说明：
-1、Module实现了魔法函数__call__()，call()里面有一条语句是要调用forward()。因此新写的类中需要重写forward()覆盖掉父类...</p>
+        <a class='prev' href='/2023/07/20/pytorch/pytorchTitanic%E5%AD%98%E6%B4%BB%E7%8E%87%E9%A2%84%E6%B5%8B/'>
+          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>pytorchTitanic存活率预测</p>
+          <p class='content'>使用pandas选取了数据集中的几个特征，来训练模型，test数据集中没有survived的预测值由于self.y_data = torch.from_numpy(np.array(self.d...</p>
         </a>
       
       
-        <a class='next' href='/2023/07/20/pytorch/%E5%8A%A0%E8%BD%BD%E6%95%B0%E6%8D%AE%E9%9B%86/'>
-          <p class='title'>加载数据集<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
-          <p class='content'>说明：1、DataSet 是抽象类，不能实例化对象，主要是用于构造我们的数据集
-​     2、DataLoader 需要获取DataSet提供的索引[i]和len;用来帮助我们加载数据，比如说...</p>
+        <a class='next' href='/2023/07/20/pytorch/potorch%E5%A4%84%E7%90%86%E5%A4%9A%E7%BB%B4%E7%89%B9%E5%BE%81%E8%BE%93%E5%85%A5/'>
+          <p class='title'>pytorch处理多维特征<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>
+说明：1、乘的权重(w)都一样，加的偏置(b)也一样。b变成矩阵时使用广播机制。神经网络的参数w和b是网络需要学习的，其他是已知的。
+2、学习能力越强，有可能会把输入样本中噪声的规律也学到。我...</p>
         </a>
       
     </div>
