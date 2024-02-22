@@ -1628,7 +1628,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: "env",
     cdn: {"js":{"app":"/js/app.js","parallax":"/js/plugins/parallax.js","rightMenu":"/js/plugins/rightMenu.js","rightMenus":"/js/plugins/rightMenus.js","sites":"/js/plugins/tags/sites.js","friends":"/js/plugins/tags/friends.js","contributors":"/js/plugins/tags/contributors.js","search":"/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1704526417706),
+    lastupdate: new Date(1708584387446),
     sidebar: {
       for_page: ["blogger","category","tagcloud","donate","text"],
       for_post: ["toc"],
@@ -2575,19 +2575,22 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     <div class="prev-next">
       
-        <a class='prev' href='/2023/07/20/pytorch/pytorch%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD/'>
-          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>pytorch反向传播</p>
-          <p class='content'>
-只更新值而不构建计算图，使用w.data，取值用w.item()
-1、w是Tensor(张量类型)，Tensor中包含data和grad，data和grad也是Tensor。grad初始为No...</p>
+        <a class='prev' href='/2023/07/20/pytorch/deeplearing%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%931/'>
+          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>梯度下降</p>
+          <p class='content'>梯度下降：
+12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849im...</p>
         </a>
       
       
-        <a class='next' href='/2023/07/20/pytorch/pytorch%E5%AE%9E%E7%8E%B0%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92/'>
-          <p class='title'>pytorch实现线性回归<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
-          <p class='content'>pytorch构建风格：
-代码说明：
-1、Module实现了魔法函数__call__()，call()里面有一条语句是要调用forward()。因此新写的类中需要重写forward()覆盖掉父类...</p>
+        <a class='next' href='/2023/07/20/pytorch/pytorchLogistic%E5%9B%9E%E5%BD%92/'>
+          <p class='title'>pytorchLogistic回归<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>
+损失函数：
+
+
+
+视频中代码F.sigmoid(self.linear(x))会引发warning，此处更改为torch.sigmoid(self.linear(x))
+ torch.sigm...</p>
         </a>
       
     </div>
