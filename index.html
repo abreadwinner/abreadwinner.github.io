@@ -1625,7 +1625,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: "env",
     cdn: {"js":{"app":"/js/app.js","parallax":"/js/plugins/parallax.js","rightMenu":"/js/plugins/rightMenu.js","rightMenus":"/js/plugins/rightMenus.js","sites":"/js/plugins/tags/sites.js","friends":"/js/plugins/tags/friends.js","contributors":"/js/plugins/tags/contributors.js","search":"/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1708589171424),
+    lastupdate: new Date(1708589631980),
     sidebar: {
       for_page: ["blogger","category","tagcloud","donate","text"],
       for_post: ["toc"],
@@ -2612,6 +2612,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           
         
+          
+        
       
     
     
@@ -2672,6 +2674,72 @@ docker 容器&#x3D;镜像+可读层容器是由镜像实例化而来。
       
         <div>
           <a class='readmore' href='/2024/02/21/Docker%E7%9A%84%E5%AE%B9%E5%99%A8%E5%92%8C%E9%95%9C%E5%83%8F/' itemprop="url">
+            阅读全文
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
+  <link itemprop="mainEntityOfPage" href="http://breadwinners.top/2024/02/21/Bugs/docker端口映射错误/">
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="怒涛卷霜雪  天堑无涯">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
+    <meta itemprop="name" content="怒涛卷霜雪  天堑无涯">
+    <meta itemprop="description" content="test description">
+  </span>
+  
+  
+  
+    <span hidden>
+      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+    </span>
+  
+  
+    
+    <h2 class="article-title"  itemprop="name headline">
+      <a href="/2024/02/21/Bugs/docker%E7%AB%AF%E5%8F%A3%E6%98%A0%E5%B0%84%E9%94%99%E8%AF%AF/"  itemprop="url">
+        docker端口映射和项目端口不同
+      </a>
+    </h2>
+  
+  <div class='md article-desc' itemprop="articleBody">
+    
+      
+        docker部署Java项目时，项目运行的端口时 8080，制作镜像后，创建镜像时使用了别的端口映射，比如8090:8090，访问项目地址会报错
+123cuel localhost：8090curl: (56) Recv failure: connection reset by peer 
+
+
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+        <time itemprop="dateCreated datePublished" datetime="2024-02-21T00:00:00+08:00">2024-02-21</time>
+        
+          <span class="dot"></span>
+          <a class="category-link" href="/categories/Bug/">Bug</a>
+          
+            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+              <a href="/categories/Bug/" itemprop="url"><span itemprop="name">Bug</span></a>
+            </span>
+          
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/2024/02/21/Bugs/docker%E7%AB%AF%E5%8F%A3%E6%98%A0%E5%B0%84%E9%94%99%E8%AF%AF/' itemprop="url">
             阅读全文
           </a>
         </div>
@@ -3224,70 +3292,6 @@ PositionEmbeddings随机初始化，让模型自己学出来Embedding，区别�
           </div>
         
       
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://breadwinners.top/2023/09/16/pytorch/GRU中droupout/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="怒涛卷霜雪  天堑无涯">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="怒涛卷霜雪  天堑无涯">
-    <meta itemprop="description" content="test description">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2023/09/16/pytorch/GRU%E4%B8%ADdroupout/"  itemprop="url">
-        GRU中dropout
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        GRU是一种循环神经网络（RNN）的变体，它可以有效地处理序列数据，如文本、语音、视频等。GRU的特点是使用了门控机制（gating mechanism）来控制信息的流动，从而解决了普通RNN的梯度消失和长期依赖问题1。
-Dropout是一种常用的神经网络正则化方法，它的作用是在训练过程中随机地将一些神经元的输出值置为0，从而减少神经元之间的复杂交互，降低了网络过拟合的风险2。Dropout...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2023-09-16T00:00:00+08:00">2023-09-16</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/pytorch/">pytorch</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/pytorch/" itemprop="url"><span itemprop="name">pytorch</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2023/09/16/pytorch/GRU%E4%B8%ADdroupout/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
     
   </section>
   
@@ -3296,7 +3300,7 @@ Dropout是一种常用的神经网络正则化方法，它的作用是在训练�
       <div class="prev-next">
         
         <p class="current">
-          1 / 10
+          1 / 11
         </p>
         
           <a class="next" rel="next" href="/page/2/">
@@ -3391,6 +3395,11 @@ Dropout是一种常用的神经网络正则化方法，它的作用是在训练�
 
     <div class='content'>
       <ul class="entry navigation">
+        
+          <li><a class="flat-box"
+            title="/categories/Bug/" href="/categories/Bug/"
+            active-action="action-categoriesBug"
+            ><div class='name'>Bug</div><div class='badge'>(1)</div></a></li>
         
           <li><a class="flat-box"
             title="/categories/Bugs/" href="/categories/Bugs/"
