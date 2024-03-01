@@ -1625,7 +1625,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: "env",
     cdn: {"js":{"app":"/js/app.js","parallax":"/js/plugins/parallax.js","rightMenu":"/js/plugins/rightMenu.js","rightMenus":"/js/plugins/rightMenus.js","sites":"/js/plugins/tags/sites.js","friends":"/js/plugins/tags/friends.js","contributors":"/js/plugins/tags/contributors.js","search":"/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1708589631980),
+    lastupdate: new Date(1709281576819),
     sidebar: {
       for_page: ["blogger","category","tagcloud","donate","text"],
       for_post: ["toc"],
@@ -2614,9 +2614,160 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           
         
+          
+        
+          
+        
       
     
     
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
+  <link itemprop="mainEntityOfPage" href="http://breadwinners.top/2024/02/28/小技巧/centos杀端口占用进程/">
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="怒涛卷霜雪  天堑无涯">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
+    <meta itemprop="name" content="怒涛卷霜雪  天堑无涯">
+    <meta itemprop="description" content="test description">
+  </span>
+  
+  
+  
+    <span hidden>
+      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+    </span>
+  
+  
+    
+    <h2 class="article-title"  itemprop="name headline">
+      <a href="/2024/02/28/%E5%B0%8F%E6%8A%80%E5%B7%A7/centos%E6%9D%80%E7%AB%AF%E5%8F%A3%E5%8D%A0%E7%94%A8%E8%BF%9B%E7%A8%8B/"  itemprop="url">
+        centos杀端口占用进程
+      </a>
+    </h2>
+  
+  <div class='md article-desc' itemprop="articleBody">
+    
+      
+        1. 查看端口占用：1netstat -anp | grep 8080
+
+
+2.杀端口1kill -9 1460
+
+
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+        <time itemprop="dateCreated datePublished" datetime="2024-02-28T00:00:00+08:00">2024-02-28</time>
+        
+          <span class="dot"></span>
+          <a class="category-link" href="/categories/%E5%B0%8F%E6%8A%80%E5%B7%A7/">小技巧</a>
+          
+            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+              <a href="/categories/%E5%B0%8F%E6%8A%80%E5%B7%A7/" itemprop="url"><span itemprop="name">小技巧</span></a>
+            </span>
+          
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/2024/02/28/%E5%B0%8F%E6%8A%80%E5%B7%A7/centos%E6%9D%80%E7%AB%AF%E5%8F%A3%E5%8D%A0%E7%94%A8%E8%BF%9B%E7%A8%8B/' itemprop="url">
+            阅读全文
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
+  <link itemprop="mainEntityOfPage" href="http://breadwinners.top/2024/02/26/小技巧/Java项目后台运行的方式/">
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="怒涛卷霜雪  天堑无涯">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
+    <meta itemprop="name" content="怒涛卷霜雪  天堑无涯">
+    <meta itemprop="description" content="test description">
+  </span>
+  
+  
+  
+    <span hidden>
+      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+    </span>
+  
+  
+    
+    <h2 class="article-title"  itemprop="name headline">
+      <a href="/2024/02/26/%E5%B0%8F%E6%8A%80%E5%B7%A7/Java%E9%A1%B9%E7%9B%AE%E5%90%8E%E5%8F%B0%E8%BF%90%E8%A1%8C%E7%9A%84%E6%96%B9%E5%BC%8F/"  itemprop="url">
+        linux下java项目在后台启动的几种方式
+      </a>
+    </h2>
+  
+  <div class='md article-desc' itemprop="articleBody">
+    
+      
+        
+直接启动，控制台退出则关掉应用
+
+1java -jar Test.jar
+
+
+后台启动，控制台退出不会关掉应用
+
+1nohup  java -jar Test.jar &amp;
+
+
+后台启动并且输出日志，控制台退出不会关掉应用
+
+1nohup  java -jar Test.jar &gt;&gt; ./javalog.log 2&gt;&amp;1 &amp;
+
+
+后台启动(加内存)并...
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+        <time itemprop="dateCreated datePublished" datetime="2024-02-26T00:00:00+08:00">2024-02-26</time>
+        
+          <span class="dot"></span>
+          <a class="category-link" href="/categories/%E5%B0%8F%E6%8A%80%E5%B7%A7/">小技巧</a>
+          
+            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+              <a href="/categories/%E5%B0%8F%E6%8A%80%E5%B7%A7/" itemprop="url"><span itemprop="name">小技巧</span></a>
+            </span>
+          
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/2024/02/26/%E5%B0%8F%E6%8A%80%E5%B7%A7/Java%E9%A1%B9%E7%9B%AE%E5%90%8E%E5%8F%B0%E8%BF%90%E8%A1%8C%E7%9A%84%E6%96%B9%E5%BC%8F/' itemprop="url">
+            阅读全文
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
       
         
           <div class='post-wrapper'>
@@ -3160,138 +3311,6 @@ N折交叉只是一种划分数据集的策略。想知道它的优势，可以�
           </div>
         
       
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://breadwinners.top/2023/09/18/Bert/bert初识/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="怒涛卷霜雪  天堑无涯">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="怒涛卷霜雪  天堑无涯">
-    <meta itemprop="description" content="test description">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2023/09/18/Bert/bert%E5%88%9D%E8%AF%86/"  itemprop="url">
-        bert初识
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        bert的基础架构
-Encoder部分的架构：
-由多个Encoder堆叠形成：
-
-input由三个部分组成：
-
-关注正常词汇和特殊词汇的作用
-
-TokenEmbedding对所有的词进行Embedding
-SegmentEmbedding由于我们处理的是两个句子，需要对两个句子进行区分
-PositionEmbeddings随机初始化，让模型自己学出来Embedding，区别于transfor...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2023-09-18T00:00:00+08:00">2023-09-18</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/bertzh/">bertzh</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/bertzh/" itemprop="url"><span itemprop="name">bertzh</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2023/09/18/Bert/bert%E5%88%9D%E8%AF%86/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://breadwinners.top/2023/09/16/pytorch/seq2seq李沐/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="怒涛卷霜雪  天堑无涯">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="怒涛卷霜雪  天堑无涯">
-    <meta itemprop="description" content="test description">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2023/09/16/pytorch/seq2seq%E6%9D%8E%E6%B2%90/"  itemprop="url">
-        2023年9月16日
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        
-
-
-
-
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2023-09-16T15:02:37+08:00">2023-09-16</time>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2023/09/16/pytorch/seq2seq%E6%9D%8E%E6%B2%90/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
     
   </section>
   
@@ -3494,7 +3513,7 @@ PositionEmbeddings随机初始化，让模型自己学出来Embedding，区别�
           <li><a class="flat-box"
             title="/categories/%E5%B0%8F%E6%8A%80%E5%B7%A7/" href="/categories/%E5%B0%8F%E6%8A%80%E5%B7%A7/"
             active-action="action-categoriesE5B08FE68A80E5B7A7"
-            ><div class='name'>小技巧</div><div class='badge'>(11)</div></a></li>
+            ><div class='name'>小技巧</div><div class='badge'>(13)</div></a></li>
         
           <li><a class="flat-box"
             title="/categories/%E6%8D%A3%E9%BC%93/" href="/categories/%E6%8D%A3%E9%BC%93/"
