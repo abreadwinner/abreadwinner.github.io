@@ -1625,7 +1625,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: "env",
     cdn: {"js":{"app":"/js/app.js","parallax":"/js/plugins/parallax.js","rightMenu":"/js/plugins/rightMenu.js","rightMenus":"/js/plugins/rightMenus.js","sites":"/js/plugins/tags/sites.js","friends":"/js/plugins/tags/friends.js","contributors":"/js/plugins/tags/contributors.js","search":"/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1710402628387),
+    lastupdate: new Date(1711034853233),
     sidebar: {
       for_page: ["blogger","category","tagcloud","donate","text"],
       for_post: ["toc"],
@@ -2717,10 +2717,11 @@ conclusion
   <div class='md article-desc' itemprop="articleBody">
     
       
-        一般来说，centos7暗转MySQL，可以直接使用yum -y install mysql来实现，但是突然碰到了不知道初始root密码的问题，记录一下解决过程
+        一般来说，centos7安装MySQL，可以直接使用yum -y install mysql来实现，但是突然碰到了不知道初始root密码的问题，记录一下解决过程
+参考文章
 网上都会说grep ‘temporary password’ /var/log/mysqld.log就可以查看临时密码，但是系统却说 No such file of directory
 解决方法
-查看是否安装了mysql服务（有则自...
+查看是否安装了mysql服...
       
     
   </div>
